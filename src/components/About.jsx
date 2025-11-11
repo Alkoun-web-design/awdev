@@ -9,7 +9,7 @@ export default function About({setContent}) {
           <h2 className="text-xl">About Me</h2>
       </div>
       <div className="font-[Roboto] px-4 md:px-8 w-auto h-auto md:h-full md:w-160">
-        <p classNmae='my-2'>My name is Hassam Sajid and I am a Web Designer and a Full-stack Developer, specifically in ReactJS,
+        <p className='my-2'>My name is Hassam Sajid and I am a Web Designer and a Full-stack Developer, specifically in ReactJS,
            NodeJs through Express, with experince using various Databases such as MongoDB, MySQL, PostgreSQL and SQLite.  
           I am an ex-lawyer from Pakistan, and ny dissatisfaction with the courts and the justice system led me to Web Development. 
           Right in the middle of a Covid-19 Lockdown in early May 2020, I decided to try out a web development course and start my

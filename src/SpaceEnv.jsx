@@ -15,11 +15,15 @@ import { SciFiAmmunitionBox } from "./components/SciFiAmmunitionBox";
 import { SciFiAmmunitionBox2 } from "./components/SciFiAmmunitionBox2";
 import { useRef } from "react";
 // import { SciFiRadar } from "./components/SciFiRadar";
-
+import { useFrame } from '@react-three/fiber';
 export default function SpaceEnv() {
 
   // const { progress, active, loaded, total } = useProgress();
   const camRef = useRef();
+  
+    useFrame(() => {
+      // camRef.current.position.z += 0.005;
+    })
 
   return (
     <>
