@@ -265,7 +265,7 @@ export default function Projects({setContent}){
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="pb-10 h-auto bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
-            <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer bg-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
+            <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer rounded-sm bg-gray-900 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
                 <Close className='p-1' />
             </div>
             <div className="mx-auto justify-center mt-4 mb-4 text-center">
@@ -273,20 +273,20 @@ export default function Projects({setContent}){
             </div>
             <div className='text-center mt-4 mb-8'>
                 {projects.map((project, i) => (
-                    <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-sm md:text-lg' : 'inline mx-1 text-gray-600 select-none text-sm md:text-lg' }`}>__</p>
+                    <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-sm md:text-lg' : 'inline mx-1 text-gray-900 select-none text-sm md:text-lg' }`}>__</p>
                 ))}
             </div>
             <div className="font-[Roboto] px-4 md:px-8 w-auto h-auto md:h-full md:w-160">
                 
                 <div className="flex flex-row mx-auto my-auto">
-                    <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-600 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer'>
+                    <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
                         <LeftChevron className='h-6 w-6' />
                     </div>
-                    <div className='rounded-sm mx-auto mb-4 px-2 py-1 w-fit text-center bg-gray-600 hover:bg-gray-100 hover:text-black transition:all ease-in-out duration-300'>
+                    <div className='rounded-sm mx-auto mb-4 px-2 py-1 w-fit text-center bg-gray-900 hover:bg-gray-100 hover:text-black transition:all ease-in-out duration-300'>
                         {/* <a href={projects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline text-lg m-1">{projects[index].name}</h3> <img className="inline h-5 w-5 mb-1" src="/images/bx_link-external.svg"/></a> */}
                         <a href={projects[index].hostLink} target="_blank" rel="noreferrer noopener" ><h3 className="inline text-lg m-1">{projects[index].name}</h3> <Link /></a>                    
                     </div>
-                    <div onClick={() => {index === projects.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-600 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer' >
+                    <div onClick={() => {index === projects.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm' >
                         <RightChevron className='h-6 w-6' />
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default function About({setContent}) {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className="pb-10 h-auto bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
-      <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer bg-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
+      <div className='rounded-sm text-xs text-center w-fit h-fit ml-4 cursor-pointer bg-gray-900 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
           <Close className='p-1' />
       </div>
       <div className="mx-auto justify-center mt-4 mb-4 text-center">
