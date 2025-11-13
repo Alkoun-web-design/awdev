@@ -8,8 +8,6 @@ import Home from "./components/Home";
 // import Contact from "./components/Contact";
 import { LinkedIcon, GithubIcon, FacebookIcon}  from "./components/Icons";
 import MusicPlayer from "./components/MusicPlayer";
-import Footer from "./components/Footer";
-
 export default function App() {
   const today = new Date;
   today.getFullYear();
@@ -33,7 +31,7 @@ export default function App() {
                 {/* <li className="mx-4 px-4 cursor-pointer" onClick={() => setContent('contact')}>Contact</li> */}
               </ul>
             </div>
-            <div className="flex flex-row ml-auto">
+            <div className="flex flex-row ml-auto ">
               {/* <a href="https://github.com/Alkoun-web-design" target="_blank" rel="noreferrer noopener" className="my-1 mx-4 h-6 w-6"><img src="/images/github-logo-wht.svg" /></a> */}
               <a href="https://github.com/Alkoun-web-design" target="_blank" rel="noreferrer noopener" className="m-1 md:mx-4 h-6 w-6 hover:bg-gray-100 hover:text-gray-900 rounded-sm transition-all"><GithubIcon /></a>
               {/* <a href="https://www.linkedin.com/in/hassam-sajid-26560752/" target="_blank" rel="noreferrer noopener" className="my-1 mx-4 h-6 w-6"><img src="/images/linkedin-logo-wht.svg" /></a> */}
@@ -48,8 +46,7 @@ export default function App() {
             {content === 'about' && <About setContent={setContent} />}
             {/* {content === 'contact' && <Contact />} */}
             {content === 'none' && <Home setContent={setContent}/>}
-          </div>
-          <Footer />          
+          </div>   
         </Html>
         <SpaceEnv />
       </Canvas>

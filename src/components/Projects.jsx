@@ -264,7 +264,7 @@ export default function Projects({setContent}){
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="pb-10 h-auto bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
+            className="pb-10 bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
             <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer rounded-sm bg-gray-900 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
                 <Close className='p-1' />
             </div>
@@ -276,7 +276,7 @@ export default function Projects({setContent}){
                     <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-sm md:text-lg' : 'inline mx-1 text-gray-900 select-none text-sm md:text-lg' }`}>__</p>
                 ))}
             </div>
-            <div className="font-[Roboto] px-4 md:px-8 w-auto h-auto md:h-full md:w-160">
+            <div className="w-110 sm:w-[40rem] h-[120%] font-[Roboto] px-4 md:px-8">
                 
                 <div className="flex flex-row mx-auto my-auto">
                     <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>

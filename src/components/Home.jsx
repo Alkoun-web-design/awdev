@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "motion/react"
+import Footer from './Footer';
 export default function Home() {
 
   return (
@@ -12,6 +13,7 @@ export default function Home() {
           <h1 className="select-none text-gray-100 text-8xl">AWDev</h1>
           {/* <h2 className="te7t-3xl">Ready to Dev</h2> */}
         </motion.div>
+        <Footer />
       </>
     )
 }
