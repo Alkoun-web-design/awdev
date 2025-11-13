@@ -7,11 +7,10 @@ export default function Home() {
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }} 
-          className="flex flex-col justify-start text">
-          <h1 className="text-5xl">AWDev</h1>
-          {/* <h2 className="text-3xl">Ready to Dev</h2> */}
+          transition={{ duration: 1.5 }}
+          className="flex flex-col self-start text">
+          <h1 className="select-none text-gray-100 text-8xl">AWDev</h1>
+          {/* <h2 className="te7t-3xl">Ready to Dev</h2> */}
         </motion.div>
       </>
     )

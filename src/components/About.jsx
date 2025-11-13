@@ -1,7 +1,13 @@
 import { Close } from './Icons'
+import { motion } from 'motion/react'
+
 export default function About({setContent}) {
   return (
-    <div className="pb-10 h-auto bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
+    <motion.div           
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="pb-10 h-auto bg-[#000000b3] px-1 pt-4 border-1 border-gray-100 rounded-md overflow-auto">
       <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer bg-gray-600 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
           <Close className='p-1' />
       </div>
@@ -28,6 +34,6 @@ export default function About({setContent}) {
           with React Three Fiber, and understanding the resourceful use of models in scenes. There is plenty more to learn, and 
           going forward, I believe that incorporating 3d models will increase useer interactions and their overall experience.</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
