@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Html, Loader } from "@react-three/drei";
 import SpaceEnv from "./SpaceEnv";
+// import SpaceEnv2 from "./SpaceEnv2";
 import React from "react";
 import Projects from "./components/Projects";
 import About from "./components/About";
@@ -48,6 +49,7 @@ export default function App() {
             {content === 'none' && <Home setContent={setContent}/>}
           </div>   
         </Html>
+        {/* <SpaceEnv2 /> */}
         <SpaceEnv />
       </Canvas>
       <Loader />
