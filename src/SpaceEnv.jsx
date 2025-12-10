@@ -1,25 +1,35 @@
-import { OrbitControls, 
-  // useProgress, 
-  PerspectiveCamera, Html } from "@react-three/drei";
+import React from "react";
+import { PerspectiveCamera, Html } from "@react-three/drei";
 import { Astronaut } from "./components/Astronaut";
 // import { EarthAstronaut } from "./components/EarthAstronaut";
 import { Earth1 } from "./components/Earth1";
 import { Moon } from "./components/Moon";
 // import { MoonCrater } from "./components/MoonCrater";
-// import { Sun } from "./components/Sun";
+import { Sun } from "./components/Sun";
 import { SciFiLaptop}  from "./components/SciFiLaptop";
 // import { Laptop } from "./components/Laptop";
 import { Stars } from "./components/Stars";
 import { SciFiBoxes } from "./components/SciFiBoxes";
 import { SciFiAmmunitionBox } from "./components/SciFiAmmunitionBox";
 import { SciFiAmmunitionBox2 } from "./components/SciFiAmmunitionBox2";
-import { useRef } from "react";
 // import { SciFiRadar } from "./components/SciFiRadar";
 import { useFrame } from '@react-three/fiber';
+import { EffectComposer, GodRays } from '@react-three/postprocessing'
+
 export default function SpaceEnv() {
 
+  const [sunReady, setSunReady] = React.useState(false)
   // const { progress, active, loaded, total } = useProgress();
-  const camRef = useRef();
+  const camRef = React.useRef();
+  const sunRef = React.useRef();
+
+  
+  React.useEffect(() => {
+    // Wait for sun to be available
+    if (sunRef.current) {
+      setSunReady(true)
+    }
+  }, [])
   
     useFrame(() => {
       // camRef.current.position.z += 0.005;
@@ -36,17 +46,15 @@ export default function SpaceEnv() {
         // far={10}
       />
       <directionalLight
-        position={[10, 20, 20]}
-        intensity={8}
+        position={[-4, 3.5, -8]}
+        intensity={7}
         castShadow
         shadow-mapSize={[2048, 2048]} // Higher = sharper shadows
-        shadow-camera-near={0.5}
-        shadow-camera-far={50}
       />
       {/* <OrbitControls  /> */}
         <Stars position={[0, 0, -20]} scale={0.3}/>
-        {/* <Sun position={[10, 5, 20]}/> */}
-        <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.01}/>
+        {/* <Sun position={[-4, 4, -20]}/> */}
+        <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.008}/>
         <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/>
         {/* <EarthAstronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[5, -3.1, 0]} scale={0.15}/> */}
         <Moon receiveShadow position={[0, -0.165, 0]} scale={2}/>
@@ -55,6 +63,23 @@ export default function SpaceEnv() {
         <SciFiAmmunitionBox castShadoww receiveShadow position={[-0.8, -0.2, -0.1]} rotation={[0, -0.2, 0]} scale={0.001}/>           
         <SciFiAmmunitionBox2 castShadoww receiveShadow position={[-0.6, -0.12, 0.8]} rotation={[-0.05, 0.5, 0]} scale={0.001}/>           
         <ambientLight intensity={0.25} />
+        <mesh ref={sunRef} position={[-9, 4, -25]}>
+          <sphereGeometry args={[0.7, 16, 16]} />
+          <meshBasicMaterial color="white" />
+        </mesh>
+      
+      <EffectComposer>
+        {sunReady && (
+          <GodRays
+            sun={sunRef.current}
+            samples={20}
+            density={0.96}
+            decay={0.93}
+            weight={0.3}
+            exposure={0.6}
+          />
+        )}
+      </EffectComposer>
     </>
   );
 }

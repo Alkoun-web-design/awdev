@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Sun(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/sun/scene.gltf')
+  const { nodes, materials, animations } = useGLTF('/models/the_sun.glb')
   const { actions } = useAnimations(animations, group)
   return (
     <group ref={group} {...props} dispose={null}>

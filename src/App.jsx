@@ -23,7 +23,8 @@ export default function App() {
     <div className="font-[Syncopate] text-gray-100 h-screen w-full bg-black">
       <Canvas shadows>
         <Html className="absolute z-20 h-screen w-screen" center>
-          <header className="flex flex-row h-12 mx-4 px-4 py-3 rounded-full border-b-1 border-gray-100 font-bold bg-[#0000007f]">
+          {/* <header className="flex flex-row h-12 mx-4 px-4 py-3 rounded-full border-b border-gray-100 font-bold bg-[#0000007f]"> */}
+          <header className="flex flex-row h-12 mx-4 px-4 py-3 rounded-full font-bold bg-[#0000007f]">
             <h2 className="hidden md:inline justify-start cursor-pointer" onClick={() => handlePageChange('none')}>AWDev</h2>
             <div className="mx-auto">
               <ul className="flex jusitfy-end text-xs md:text-md">
