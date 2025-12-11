@@ -273,7 +273,7 @@ export default function Projects({setContent}){
             </div>
             <div className='text-center mt-4 mb-8'>
                 {projects.map((project, i) => (
-                    <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-sm md:text-lg' : 'inline mx-1 text-gray-900 select-none text-sm md:text-lg' }`}>__</p>
+                    <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-3xl' : 'inline mx-1 text-gray-600 select-none text-3xl' }`}>.</p>
                 ))}
             </div>
             <div className="w-84 sm:w-160 h-[140%] sm:h-[120%] font-[Roboto] px-2 md:px-8">
