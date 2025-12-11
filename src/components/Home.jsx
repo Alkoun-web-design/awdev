@@ -10,7 +10,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
           className="flex flex-col self-start text">
-          <h1 className="select-none text-gray-100 text-8xl">AWDev</h1>
+          <h1 className="select-none text-gray-100 text-6xl md:text-8xl">AWDev</h1>
           {/* <h2 className="te7t-3xl">Ready to Dev</h2> */}
         </motion.div>
         <Footer />
