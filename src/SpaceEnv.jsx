@@ -1,8 +1,8 @@
 import React from "react";
-import { PerspectiveCamera, Html } from "@react-three/drei";
+import { PerspectiveCamera, OrbitControls, Html } from "@react-three/drei";
 import { Astronaut } from "./components/Astronaut";
 // import { EarthAstronaut } from "./components/EarthAstronaut";
-import { Earth1 } from "./components/Earth1";
+// import { Earth1 } from "./components/Earth1";
 import { Moon } from "./components/Moon";
 // import { MoonCrater } from "./components/MoonCrater";
 import { Sun } from "./components/Sun";
@@ -15,6 +15,7 @@ import { SciFiAmmunitionBox2 } from "./components/SciFiAmmunitionBox2";
 // import { SciFiRadar } from "./components/SciFiRadar";
 import { useFrame } from '@react-three/fiber';
 import { EffectComposer, GodRays } from '@react-three/postprocessing'
+import { Earth2 } from "./components/Earth2";
 
 export default function SpaceEnv() {
 
@@ -54,7 +55,8 @@ export default function SpaceEnv() {
       {/* <OrbitControls  /> */}
         <Stars position={[0, 0, -20]} scale={0.3}/>
         {/* <Sun position={[-4, 4, -20]}/> */}
-        <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.008}/>
+        {/* <Earth1 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={0.008}/> */}
+        <Earth2 castShadow receiveShadow position={[0, 2, -20]} rotation={[1, 0.8, 0]} scale={1}/>
         <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/>
         {/* <EarthAstronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[5, -3.1, 0]} scale={0.15}/> */}
         <Moon receiveShadow position={[0, -0.165, 0]} scale={2}/>

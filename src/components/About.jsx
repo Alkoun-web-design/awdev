@@ -14,7 +14,7 @@ export default function About({setContent}) {
       <div className="mx-auto justify-center mt-4 mb-4 text-center">
           <h2 className="text-xl">About Me</h2>
       </div>
-      <div className="w-110 sm:w-[40rem] h-[120%] font-[Roboto] px-8">
+      <div className="w-84 sm:w-160 h-[140%] sm:h-[120%] font-[Roboto] px-2 md:px-8">
         <p className='my-2'>My name is Hassam Sajid and I am a Web Designer and a Full-stack Developer, specifically in ReactJS,
            NodeJs through Express, with experince using various Databases such as MongoDB, MySQL, PostgreSQL and SQLite.  
           I am an ex-lawyer from Pakistan, and ny dissatisfaction with the courts and the justice system led me to Web Development. 

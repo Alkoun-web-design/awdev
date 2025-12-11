@@ -189,10 +189,10 @@ export default function Projects({setContent}){
                 <p className="m-2">The website was first developed in AlpineJS, however, the business wanted a blogging section aswell.</p>
                 <p className="m-2">The website is currently under active development.</p>
             </div>,
-            stack: 'ReactJS',
-            status: 'In-development',
+            stack: 'NextJS, TailwindCSS, PHP',
+            status: 'Complete',
             githubLink: '',
-            hostLink: 'https://project-14-as-react.netlify.app/'
+            hostLink: 'https://apexsynergymc.com/'
         },
         {
             name: "Mariam's Portfolio website",
@@ -201,7 +201,7 @@ export default function Projects({setContent}){
                 <p className="m-2">Templates were used to quickly develop the website for being used by the professional.</p>
                 <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
             </div>,
-            stack: 'ReactJS',
+            stack: 'NextJS, TailwindCSS',
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://mariamshawki.netlify.app/'
@@ -276,7 +276,7 @@ export default function Projects({setContent}){
                     <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-sm md:text-lg' : 'inline mx-1 text-gray-900 select-none text-sm md:text-lg' }`}>__</p>
                 ))}
             </div>
-            <div className="w-110 sm:w-[40rem] h-[120%] font-[Roboto] px-4 md:px-8">
+            <div className="w-84 sm:w-160 h-[140%] sm:h-[120%] font-[Roboto] px-2 md:px-8">
                 
                 <div className="flex flex-row mx-auto my-auto">
                     <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
@@ -291,7 +291,11 @@ export default function Projects({setContent}){
                     </div>
                 </div>
 
-                <div className=''>
+                <motion.div           
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    className=''>
                     <p className={`${projects[index].status === 'Complete' ? 'text-green-400 m-2' : 'text-orange-500 m-2'}`}>Status: {projects[index].status}</p>
                     <p className="m-2">Stack: {projects[index].stack}</p>
                     <div>
@@ -300,7 +304,7 @@ export default function Projects({setContent}){
                     {/* <div className='m-2'>
                         <a href={projects[index].githubLink} target="_blank" rel="noreferrer noopener">Github Link</a>
                     </div> */}
-                </div>
+                </motion.div>
 
             </div>
         </motion.div>
