@@ -46,7 +46,7 @@ export default function SpaceEnv() {
         // far={10}
       />
       <directionalLight
-        position={[-4, 3.5, -8]}
+        position={[-3, 1.8, -8]}
         intensity={7}
         castShadow
         shadow-mapSize={[2048, 2048]} // Higher = sharper shadows
