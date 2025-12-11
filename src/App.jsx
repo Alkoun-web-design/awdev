@@ -29,7 +29,7 @@ export default function App() {
             <div className="mx-auto">
               <ul className="flex jusitfy-end text-xs md:text-md">
                 <li className="m-1 p-1 md:px-2 cursor-pointer hover:bg-gray-100 hover:text-gray-900 rounded-sm transition-all" onClick={() => handlePageChange('projects')}>Projects</li>
-                <li className="m-1 p-1 md:px-2 cursor-pointer hover:bg-gray-100 hover:text-gray-900 rounded-sm transition-all" onClick={() => handlePageChange('about')}>About AWDev</li>
+                <li className="m-1 p-1 md:px-2 cursor-pointer text-nowrap hover:bg-gray-100 hover:text-gray-900 rounded-sm transition-all" onClick={() => handlePageChange('about')}>About AWDev</li>
                 {/* <li className="mx-4 px-4 cursor-pointer" onClick={() => setContent('contact')}>Contact</li> */}
               </ul>
             </div>
