@@ -23,6 +23,7 @@ export default function SpaceEnv() {
   // const { progress, active, loaded, total } = useProgress();
   const camRef = React.useRef();
   const sunRef = React.useRef();
+  const windowWidth = window.innerWidth;
 
   
   React.useEffect(() => {
@@ -60,10 +61,14 @@ export default function SpaceEnv() {
         <Astronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/>
         {/* <EarthAstronaut castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[5, -3.1, 0]} scale={0.15}/> */}
         <Moon receiveShadow position={[0, -0.165, 0]} scale={2}/>
-        <SciFiLaptop castShadoww receiveShadow position={[-0.18, -0.055, 1.24]} rotation={[-0.03, 0.25, 0]} scale={0.25}/>  
-        <SciFiBoxes castShadoww receiveShadow position={[-0.8, 0.29, -0.1]} rotation={[0, 0, 0]} scale={0.25}/>           
-        <SciFiAmmunitionBox castShadoww receiveShadow position={[-0.8, -0.2, -0.1]} rotation={[0, -0.2, 0]} scale={0.001}/>           
-        <SciFiAmmunitionBox2 castShadoww receiveShadow position={[-0.6, -0.12, 0.8]} rotation={[-0.05, 0.5, 0]} scale={0.001}/>           
+        { windowWidth > 700 &&        
+          <>
+            <SciFiLaptop castShadow receiveShadow position={[0.08, -0.2, 1.29]} rotation={[0, -2.9, 0]} scale={0.15}/><SciFiLaptop castShadoww receiveShadow position={[-0.18, -0.055, 1.24]} rotation={[-0.03, 0.25, 0]} scale={0.25}/>  
+            <SciFiBoxes castShadoww receiveShadow position={[-0.8, 0.29, -0.1]} rotation={[0, 0, 0]} scale={0.25}/>   
+            <SciFiAmmunitionBox castShadoww receiveShadow position={[-0.8, -0.2, -0.1]} rotation={[0, -0.2, 0]} scale={0.001}/>           
+            <SciFiAmmunitionBox2 castShadoww receiveShadow position={[-0.6, -0.12, 0.8]} rotation={[-0.05, 0.5, 0]} scale={0.001}/>           
+          </>
+        }
         <ambientLight intensity={0.25} />
         <mesh ref={sunRef} position={[-9, 4, -25]}>
           <sphereGeometry args={[0.7, 16, 16]} />
