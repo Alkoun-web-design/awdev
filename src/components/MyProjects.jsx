@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { LeftChevron, RightChevron, Link, Close } from "./Icons";
 import { motion } from 'motion/react';
-export default function Projects({setContent}){
+export default function MyProjects({setContent}){
 
     const projects = [
         {
@@ -261,24 +261,20 @@ export default function Projects({setContent}){
 
     return(
         <motion.div           
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="pb-10 px-1 pt-4 border border-gray-100 rounded-md overflow-auto">
-            <div className='text-xs text-center w-fit h-fit ml-4 cursor-pointer rounded-sm bg-gray-900 hover:text-black hover:bg-gray-100 transition-all duration-300' onClick={() => setContent('none')}>
-                <Close className='p-1' />
+          initial={{ opacity: 0, translateY: 5 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          exit={{ opacity:0 , translateY: 5 }}
+          transition={{ duration: 0.5 }}
+          className="grid grid-cols-subgrid col-start-2 col-end-12 row-span-5 backdrop-blur-3xl rounded-sm border border-gray-500 p-4 text-sm"
+        >
+            <div className="col-span-full m-2">
+                <h3 className="text-xl">My Projects</h3>
             </div>
-            <div className="mx-auto justify-center mt-4 mb-4 text-center">
-                <h2 className="text-xl">Projects</h2>
-            </div>
-            <div className='text-center mt-4 mb-8'>
+            <div className='col-start-1 col-end-5 text-center my-2 font-[Roboto] align-start'>
                 {projects.map((project, i) => (
                     <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-3xl' : 'inline mx-1 text-gray-600 select-none text-3xl' }`}>.</p>
                 ))}
-            </div>
-            <div className="w-84 sm:w-160 h-[140%] sm:h-[120%] font-[Roboto] px-2 md:px-8">
-                
-                <div className="flex flex-row mx-auto my-auto">
+                <div className="flex flex-row mx-auto">
                     <div onClick={() => {index === 0 ? setIndex(projects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
                         <LeftChevron className='h-6 w-6' />
                     </div>
@@ -290,6 +286,8 @@ export default function Projects({setContent}){
                         <RightChevron className='h-6 w-6' />
                     </div>
                 </div>
+            </div>
+            <div className="col-start-5 col-end-12 font-[Roboto] align-start overflow-scroll">
 
                 <motion.div           
                     initial={{ opacity: 0 }}
