@@ -7,7 +7,7 @@ export default function AboutMe() {
             animate={{ opacity: 1, translateY: 0 }}
             exit={{ opacity:0 , translateY: 5 }}
             transition={{ duration: 0.5 }}
-            className="col-start-8 col-end-12 row-span-5 backdrop-blur-xl rounded-sm border border-gray-500 p-4 text-wrap"
+            className="col-start-2 col-end-12 md:col-span-5 lg:col-start-8 lg:col-end-12 row-span-5 backdrop-blur-xl rounded-sm border border-gray-500 p-4 text-wrap overflow-y-scroll"
             >
             <div className="mx-auto justify-center text-center m-2">
                 <h3 className="text-xl">About AwDev & Me</h3>
