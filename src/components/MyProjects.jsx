@@ -483,7 +483,7 @@ export default function MyProjects({setContent}){
                 <p className="m-2">Templates were used to quickly develop the website for being used by the professional.</p>
                 <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
             </div>,
-            image: '/images/projects/mariam-shawki.webp',
+            image: '/images/projects/mariam.webp',
             imageAlt: "Mariam Shawki's website",
             stack: 'NextJS, TailwindCSS',
             status: 'Complete',
@@ -550,7 +550,7 @@ export default function MyProjects({setContent}){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 row-span-6 backdrop-blur-3xl rounded-sm border border-gray-500 p-4 text-sm overflow-y-scroll"
+          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-3xl rounded-sm border border-gray-500 p-4 text-sm overflow-y-scroll"
         >
             <div className="col-span-full m-2">
                 <h3 className="text-xl">Featured Projects</h3>
