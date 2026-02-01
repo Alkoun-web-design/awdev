@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/earth-4de1bcbd22a444abb4f089b9b78ec96a
 Title: Earth
 */
 
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber'
 
@@ -19,7 +19,7 @@ export function Earth2(props) {
 //   const { actions } = useAnimations(animations, group)
 
     useFrame(() => {
-      group.current.rotation.y += 0.0001
+      group.current.rotation.y +=  0.0002
     })
 
   return (

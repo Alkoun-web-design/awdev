@@ -7,7 +7,7 @@ export default function Hero() {
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded-xl border border-gray-500 p-4 text-gray-100 overflow-y-scroll">
+          className="col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded-xl border border-gray-500 p-2 text-gray-100 overflow-auto">
           <h1 className="text-xl md:text-5xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
           <h2 className="text-xl md:text-2xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
           <div className="flex flex-row ml-auto font-[Roboto] flex-wrap text-sm">

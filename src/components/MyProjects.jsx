@@ -550,7 +550,7 @@ export default function MyProjects({setContent}){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-3xl rounded-sm border border-gray-500 p-4 text-sm overflow-y-scroll"
+          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full m-2">
                 <h3 className="text-xl">Featured Projects</h3>
@@ -580,9 +580,9 @@ export default function MyProjects({setContent}){
           animate={{ opacity: 1, translateY: 0 }}
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-6 lg:col-end-12 row-span-6 backdrop-blur-3xl rounded-sm border border-gray-500 p-4 text-sm  overflow-y-scroll"
+          className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-7 lg:col-start-6 lg:col-end-12 row-span-6 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-sm overflow-auto"
         >
-            <div className="col-span-full font-[Roboto] align-start overflow-scroll">
+            <div className="col-span-full font-[Roboto] align-start">
 
                 <motion.div           
                     initial={{ opacity: 0 }}
