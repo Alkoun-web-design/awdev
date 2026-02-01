@@ -30,7 +30,7 @@ export default function MusicPlayer() {
       className="m-2 md:m-4 inline-block mr-auto text-sm font-[Roboto] bg-gray-900 rounded-full px-4 py-2 w-fit hover:text-gray-900 hover:bg-gray-100 hover:cursor-pointer transition-all">
         Permafrost - Scott Buckley 
         { isPlaying ? <PauseIcon /> : <PlayIcon /> }
-          <audio ref={audioRef} className="md:inline bg-gray-900" src="/audio/scott-buckley-permafrost(chosic.com).mp3" 
+          <audio ref={audioRef} className="md:inline bg-gray-900" src="/audio/scott-buckley-permafrost(chosic.com).ogg" 
           // controls 
             loop   
       />

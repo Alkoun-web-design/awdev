@@ -6,13 +6,13 @@ Source: https://sketchfab.com/3d-models/astronaut-482bf87662fd4b378bcb3a2931d59c
 Title: astronaut
 */
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 
 export function Astronaut(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/astronaut(1)/scene.gltf')
-  const { actions } = useAnimations(animations, group)
+  // const { actions } = useAnimations(animations, group)
   
   return (
     <group ref={group} {...props} dispose={null}>
