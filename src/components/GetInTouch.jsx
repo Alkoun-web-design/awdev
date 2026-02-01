@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import React from "react"
+import { useState } from "react"
 import { LeftChevron, RightChevron, Link } from "./Icons";
 
 const contactMethods = [
@@ -12,7 +12,7 @@ const contactMethods = [
 ]
 export default function GetInTouch() { 
 
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
 
     return (
         <motion.div           

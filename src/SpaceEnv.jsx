@@ -1,4 +1,4 @@
-import React from "react";
+import {useState, useEffect, useRef} from "react";
 import { PerspectiveCamera, OrbitControls, Html } from "@react-three/drei";
 import { Astronaut } from "./components/Astronaut";
 // import { EarthAstronaut } from "./components/EarthAstronaut";
@@ -19,14 +19,14 @@ import { Earth2 } from "./components/Earth2";
 
 export default function SpaceEnv() {
 
-  const [sunReady, setSunReady] = React.useState(false)
+  const [sunReady, setSunReady] = useState(false)
   // const { progress, active, loaded, total } = useProgress();
-  const camRef = React.useRef();
-  const sunRef = React.useRef();
+  const camRef = useRef();
+  const sunRef = useRef();
   const windowWidth = window.innerWidth;
 
   
-  React.useEffect(() => {
+  useEffect(() => {
     // Wait for sun to be available
     if (sunRef.current) {
       setSunReady(true)

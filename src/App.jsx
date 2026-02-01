@@ -1,11 +1,11 @@
 // import { Canvas } from "@react-three/fiber";
-import { Loader } from "@react-three/drei";
-import SpaceEnv from "./SpaceEnv";
 // import SpaceEnv2 from "./SpaceEnv2";
-import React from "react";
+import {useState, lazy} from "react";
+const LoaderComponent = lazy(() => import("./components/LoaderComponent"));
+const SpaceEnv = lazy(() => import("./SpaceEnv"));
 // import Contact from "./components/Contact";
-// import MusicPlayer from "./components/MusicPlayer";
-const MusicPlayer = React.lazy(() => import("./components/MusicPlayer"));
+const Canvas = lazy(() => import('./components/CanvasComponent'))
+const MusicPlayer = lazy(() => import("./components/MusicPlayer"));
 // import { motion } from "motion/react"
 import { AnimatePresence } from "motion/react"
 import MyProjects from "./components/MyProjects";
@@ -15,13 +15,11 @@ import Hero from "./components/Hero";
 import Attributions from "./components/Attributions";
 import { Earth } from "./components/Icons";
 
-const Canvas = React.lazy(() => import('./components/CanvasComponent'))
-
 export default function App() {
   const today = new Date;
   today.getFullYear();
 
-  const [showSpace, setShowSpace] = React.useState(false);
+  const [showSpace, setShowSpace] = useState(false);
 
   return (
     <>
@@ -49,7 +47,7 @@ export default function App() {
         <Canvas shadows>
           <SpaceEnv />
         </Canvas>
-        <Loader />
+        <LoaderComponent />
       </div>
     </>
   );

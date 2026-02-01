@@ -1,6 +1,6 @@
 
 import { motion } from "motion/react"
-import React from "react"
+import { useState } from "react"
 import { LeftChevron, RightChevron, Link } from "./Icons";
 
 const attributions = [
@@ -16,7 +16,7 @@ const attributions = [
 
 export default function Attributions() {
 
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = useState(0);
 
     return (
         <motion.div           

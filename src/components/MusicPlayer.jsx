@@ -1,12 +1,12 @@
-import React from 'react';
+import {useState, useEffect, useRef} from 'react';
 import { PauseIcon, PlayIcon } from './Icons';
 
 export default function MusicPlayer() {
 
-    const [isPlaying, setIsPlaying] = React.useState(false);
-    const audioRef = React.useRef();
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audioRef = useRef();
 
-    React.useEffect(() => {
+    useEffect(() => {
       if(isPlaying){
         audioRef.current.play();
       } else {

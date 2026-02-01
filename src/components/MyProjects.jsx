@@ -1,7 +1,7 @@
-import React from 'react';
+import { useState } from 'react';
 import { LeftChevron, RightChevron, Link, Close } from "./Icons";
 import { motion } from 'motion/react';
-export default function MyProjects({setContent}){
+export default function MyProjects(){
 
     const otherProjects = [
         {
@@ -429,7 +429,7 @@ export default function MyProjects({setContent}){
 
     ]
 
-    const [index, setIndex] = React.useState(0)
+    const [index, setIndex] = useState(0)
 
     return(
         <>
