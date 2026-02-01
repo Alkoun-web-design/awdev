@@ -4,7 +4,8 @@ import SpaceEnv from "./SpaceEnv";
 // import SpaceEnv2 from "./SpaceEnv2";
 import React from "react";
 // import Contact from "./components/Contact";
-import MusicPlayer from "./components/MusicPlayer";
+// import MusicPlayer from "./components/MusicPlayer";
+const MusicPlayer = React.lazy(() => import("./components/MusicPlayer"));
 // import { motion } from "motion/react"
 import { AnimatePresence } from "motion/react"
 import MyProjects from "./components/MyProjects";

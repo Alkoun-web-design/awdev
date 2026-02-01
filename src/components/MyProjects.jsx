@@ -3,35 +3,7 @@ import { LeftChevron, RightChevron, Link, Close } from "./Icons";
 import { motion } from 'motion/react';
 export default function MyProjects({setContent}){
 
-    const projects = [
-        {
-            name: 'Counselling with Iqra',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A psychologist who wanted a business website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme, and then deployed on a standard hosting service provider providing for wordpress hosting, with a domain name.</p> 
-                <p className="m-2">Later the client sought to have their website redesigned, hosted without paying the hosting charges, and maintain the blogging capabilities of the original.</p>
-                <p className="m-2">I knew of netlify's free tier and support for static site generators and front end web apps and websites. I redesigned the website after taking a UI/UX course from Udemy, using HTML, CSS JavaScript, and a static site generator called 11ty. the blogging capabilities were reserved, as the client could now write in markdown files and insert them into a "blogs" folder to dynamically assemble a page for the new blog.</p>
-                <p className='m-2'>The project gave me an understanding of creating custom wordpress themes using HTML, CSS, JavaScript and PHP to create a wordpress theme. Later the use of  11ty with "Nunjucks" as a templating language allowed for me to use templates and inserting of blogs through markdown files.</p>
-            </div>,
-            image: '/images/projects/cwi.webp',
-            imageAlt: 'Counselling With Iqras website',
-            stack: '11ty, JavaScript, CSS, HTML',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://project-1-cwi-11ty.netlify.app/'
-        },
-        {
-            name: 'Stellar Services International',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A simple business website, developed using the Divi Builder on wordpress. The business is a subsidiary of the Canam Steel Pvt Ltd.</p> 
-                <p className="m-2">Before designing the website, I undertook a website designing course from Udemy. with this new approach, I focused on using a builder so I can have maximum focus on designing rather than development.</p>
-            </div>,
-            image: '/images/projects/ssi.webp',
-            imageAlt: 'Counselling With Iqras website',
-            stack: 'Wordpress',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://stellarservices.international/'
-        },
+    const otherProjects = [
         {
             name: 'Art Gallery Website',
             description: <div className='mx-2 mt-2 mb-4'> 
@@ -58,18 +30,6 @@ export default function MyProjects({setContent}){
             hostLink: 'https://alkounwebdesigns.netlify.app/'
         },
         {
-            name: 'AWDev website',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">I redesigned the portfolio website to reflect the original ambitions of the first one, using React and React Three Fiber.</p> 
-                <p className="m-2">I came back to the website years later to finally use 3D models for a scene based in space, once I had grown comfortable with React. However I realized I need to further understand animations, compression, editing of meshes and textures regarding 3D models.</p>
-                <p className="m-2">I learnt to use drei tools, effective scene building, use of simple animations, custom models with custom textures, and optimized 3d models. However there is plenty to learn, and my portfolio website serves as a perfect testing ground for Augmented Reality and Virtual Reality.</p>
-            </div>,
-            stack: 'React 3 Fiber',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://awdev.netlify.app/'
-        },
-        {
             name: 'Saeed & Sons Ecommerce website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">The client owns a super store and wanted to increase his reach in the neighborhood his store was situated in. He wanted an e-commerce store to also bring his business presence to the internet.</p> 
@@ -82,30 +42,6 @@ export default function MyProjects({setContent}){
             hostLink: 'https://project-5-ochre.vercel.app/'
         },
         {
-            name: 'Birthday wishing website',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">My first React Three Fiber website, it was originally designed to wish someone personally on their birthday.</p> 
-                <p className="m-2">The scene was originally inside a cafe with balloons, two cakes, and people seated at their tables. Another building was visible through the window from across the street.</p>
-                <p className="m-2">I recently redesigned the scene to have fewer models, with smaller sizes and animations, with the aim of communicating the message through angles and objects, instead of building an complete scene. This resulted in better loading times, better performance with the least usage of resources.</p>
-            </div>,
-            stack: 'React 3 Fiber',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://project-6-r3f-birthday.netlify.app/'
-        },
-        {
-            name: 'AARC website',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A website for a team of psychologists and psychotherapists who were launching a space for therapists. The website was built using HTML, CSS and JavaScript on the frontend, and for the first time, NodeJs on the backend to validate and accept form submissions, whilst serving static files.</p> 
-                <p className="m-2">The design was rudimentary as there was a certain deadline by which the team wanted the website to be up and active, with the most important aspect of the website being that visitors could submit their forms to the team.</p>
-                <p className="m-2">This was my fist foray into a backend, preoccupying most of my time, resulting in a lackluster website design. I made commitments to upgrade the design later that year.</p>
-            </div>,
-            stack: 'HTML, CSS, JS, NodeJS',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://project-7-aarc-node.vercel.app/'
-        },
-        {
             name: 'AARC website re-designed',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">The website for AARC was re-designed a year later using tailwind css, tailgrids templates, and also incorporating animations through state management using AlpineJS.</p> 
@@ -115,30 +51,6 @@ export default function MyProjects({setContent}){
             status: 'Complete',
             githubLink: '',
             hostLink: 'http://aarctherapy.com/'
-        },
-        {
-            name: 'Binance Cryptocurrency Table',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved performance by removed the shadow DOM update step, therefore i was inclined use it for this particular web-app.</p> 
-                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
-                <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to display the results.</p>
-            </div>,
-            stack: 'Astro, SolidJS, NodeJS',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://project-10-ca-react.netlify.app/'
-        },
-        {
-            name: 'Cryptocurrency Project',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">An improvement from the previous project, built using ReactJS and NodeJS with typescript on the backend.</p> 
-                <p className="m-2">The project was my first implementation of typescript, on the server or otherwise. It also made me aware of peformance bottlenecks.</p>
-                <p className="m-2">The project has now prompted me to learn Golang as a much more performant and resource efficient language that can be more useful for a project such as this.</p>
-            </div>,
-            stack: 'ReactJS, NodeJS',
-            status: 'In-development',
-            githubLink: '',
-            hostLink: '#'
         },
         {
             name: 'Eye Analyzing Tool website',
@@ -188,30 +100,6 @@ export default function MyProjects({setContent}){
         //     githubLink: '',
         //     hostLink: ''
         // },
-        {
-            name: 'Apex Synergy website',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A simple website for a software outsourcing business, built on React, TailwindCSS and PHP.</p> 
-                <p className="m-2">The website was first developed in AlpineJS, however, the business wanted a blogging section aswell.</p>
-                <p className="m-2">The website is currently under active development.</p>
-            </div>,
-            stack: 'NextJS, TailwindCSS, PHP',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://apexsynergymc.com/'
-        },
-        {
-            name: "Mariam's Portfolio website",
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A relatively simple portfolio website for a professional built on React and Tailwind CSS.</p> 
-                <p className="m-2">Templates were used to quickly develop the website for being used by the professional.</p>
-                <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
-            </div>,
-            stack: 'NextJS, TailwindCSS',
-            status: 'Complete',
-            githubLink: '',
-            hostLink: 'https://mariamshawki.netlify.app/'
-        },
         {
             name: 'Mistral AI Chatbot webapp',
             description: <div className='mx-2 mt-2 mb-4'> 
@@ -555,7 +443,7 @@ export default function MyProjects({setContent}){
             <div className="col-span-full m-2">
                 <h3 className="text-xl">Featured Projects</h3>
             </div>
-            <div className='col-span-full text-center font-[Roboto] align-start'>
+            <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
                 <img src={featuredProjects[index].image} className="object-center" loading="lazy" alt={featuredProjects[index].imageAlt}/>
                 {featuredProjects.map((project, i) => (
                     <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-3xl' : 'inline mx-1 text-gray-600 select-none text-3xl' }`}>.</p>
