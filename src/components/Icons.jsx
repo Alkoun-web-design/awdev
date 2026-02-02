@@ -114,3 +114,11 @@ export function Earth(){
 		</svg>
 	)
 }
+
+export function Dot(){
+	return (
+		<svg className="inline-block mx-1" xmlns="http://www.w3.org/2000/svg" width={10} height={10} viewBox="0 0 48 48">
+			<path fill="currentColor" stroke="currentColor" strokeWidth={4} d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"></path>
+		</svg>
+	)
+}

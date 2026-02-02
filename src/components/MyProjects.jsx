@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LeftChevron, RightChevron, Link, Close } from "./Icons";
+import { LeftChevron, RightChevron, Link, Dot } from "./Icons";
 import { motion } from 'motion/react';
 export default function MyProjects(){
 
@@ -444,10 +444,7 @@ export default function MyProjects(){
                 <h3 className="text-xl">Featured Projects</h3>
             </div>
             <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
-                <img src={featuredProjects[index].image} className="object-center" loading="lazy" alt={featuredProjects[index].imageAlt}/>
-                {featuredProjects.map((project, i) => (
-                    <p key={i} className={`${ i - 1 < index ? 'inline mx-1 text-gray-100 select-none text-3xl' : 'inline mx-1 text-gray-600 select-none text-3xl' }`}>.</p>
-                ))}
+                <img src={featuredProjects[index].image} className="object-center" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
                 <div className="flex flex-row mx-auto my-2">
                     <div onClick={() => {index === 0 ? setIndex(featuredProjects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
                         <LeftChevron className='h-6 w-6' />
@@ -460,7 +457,9 @@ export default function MyProjects(){
                         <RightChevron className='h-6 w-6' />
                     </div>
                 </div>
-                
+                {featuredProjects.map((project, i) => (
+                    <p key={project} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
+                ))}
             </div>
         </motion.div>
         <motion.div           

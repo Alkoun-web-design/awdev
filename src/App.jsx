@@ -14,6 +14,7 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Attributions from "./components/Attributions";
 import { Earth } from "./components/Icons";
+import NewCell from "./components/NewCell";
 
 export default function App() {
   const today = new Date;
@@ -38,6 +39,7 @@ export default function App() {
             <AboutMe />
             <GetInTouch  />
             <Attributions />
+            <NewCell />
             <MyProjects />
             </>
           )}
