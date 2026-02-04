@@ -9,8 +9,9 @@ export default function AboutMe() {
             transition={{ duration: 0.5 }}
             className="col-start-2 col-end-12 md:col-span-5 lg:col-start-8 lg:col-end-12 row-span-2 md:row-span-5 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-wrap overflow-auto"
             >
-            <div className="mx-auto justify-center text-center m-2">
+            <div className="grid justify-items-center text-center m-2">
                 <h3 className="text-xl">About AwDev & Me</h3>
+                <img src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
             </div>
             <div className="font-[Roboto] text-sm text-justify">
               <p className='m-2'>Full stack developer with a focus on frontend with JavaScript, 
