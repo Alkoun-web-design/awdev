@@ -14,11 +14,20 @@ export default function AboutMe() {
                 <img src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
             </div>
             <div className="font-[Roboto] text-sm text-justify">
-              <p className='m-2'>Full stack developer with a focus on frontend with JavaScript, 
-              TypeScript, React, Next.js, Node.js, Express, Alpine.js, CSS, Tailwind, Bootstrap, 
-              React Three Fiber, Astro.js, Solid.js and Bun.js.</p>
-              <p className='m-2'>Currently working on a personal finance app, an e-commerce website.</p>
-              <p className='m-2'>Learning blender, testing and Golang.</p>
+                <p className='m-2'>Full stack developer with a focus on frontend with JavaScript, 
+                TypeScript, React, Next.js, Node.js, Express, Alpine.js, CSS, Tailwind, Bootstrap, 
+                React Three Fiber, Astro.js, Solid.js and Bun.js.</p>
+                <p className='m-2'>Currently working on a personal finance app and an e-commerce website.</p>
+                <p className='m-2'>Learning 
+                <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+                    <img src="/images/blender-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+                    <span className="my-auto">blender</span>
+                </span>, testing and 
+                <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+                    <img src="/images/tech-stack/go-icon2.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+                    <span className="my-auto">Golang</span>
+                </span>
+              </p>
             </div>
         </motion.div>
     )

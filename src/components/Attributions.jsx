@@ -40,7 +40,7 @@ export default function Attributions() {
             </div>
             <div className="mx-auto text-center">
                 {attributions.map((attribution, i) => (
-                  <p key={attribution} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
+                  <p key={attribution.name} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
                 ))}
             </div>
         </motion.div>

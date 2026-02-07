@@ -117,11 +117,28 @@ export function Earth(){
 
 export function Dot(){
 	return (
-		<svg className="inline-block mx-1" xmlns="http://www.w3.org/2000/svg" width={10} height={10} viewBox="0 0 48 48">
+		<svg className='inline-block mx-1 ' xmlns="http://www.w3.org/2000/svg" width={10} height={10} viewBox="0 0 48 48">
 			<path fill="currentColor" stroke="currentColor" strokeWidth={4} d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"></path>
 		</svg>
 	)
 }
+
+export function GreenDot(){
+	return (
+		<svg className='inline-block mx-1 text-green-400 shadow-xl shadow-green-400' xmlns="http://www.w3.org/2000/svg" width={15} height={15} viewBox="0 0 48 48">
+			<path fill="currentColor" stroke="currentColor" strokeWidth={4} d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"></path>
+		</svg>
+	)
+}
+
+export function OrangeDot(){
+	return (
+		<svg className='inline-block mx-1 text-orange-500 shadow-xl shadow-orange-500' xmlns="http://www.w3.org/2000/svg" width={15} height={15} viewBox="0 0 48 48">
+			<path fill="currentColor" stroke="currentColor" strokeWidth={4} d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"></path>
+		</svg>
+	)
+}
+
 
 export function LoadingBlip() {
 	return (

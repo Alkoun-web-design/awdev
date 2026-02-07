@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LeftChevron, RightChevron, Link, Dot } from "./Icons";
+import { LeftChevron, RightChevron, Link, Dot, GreenDot, OrangeDot } from "./Icons";
 import { motion } from 'motion/react';
 export default function MyProjects(){
 
@@ -12,7 +12,12 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/cwi.webp',
             imageAlt: 'Counselling With Iqras website',
-            stack: 'HTML, CSS, JS',
+            stack: [
+                {name:'11ty', image:'/images/tech-stack/11ty-icon.png'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'In-development',
             githubLink: '',
             hostLink: 'https://incomparable-naiad-ada14b.netlify.app/'
@@ -24,7 +29,12 @@ export default function MyProjects(){
                 <p className="m-2">The website was built purely on HTML, CSS and JavaScript. The navigation and animations were entirely handled by JavaScript, and it was the first programming problem I had solved using my existing knowledge of JavaScript at that time. It gave me confidence that I could program in the future.</p> 
                 <p className="m-2">While it was a great accomplishment, I had further ambitions of inserting 3D Models and levels of interactivity on the website, this led me to come back when I had understood how to use 3D models in web projects.</p>
             </div>,
-            stack: 'HTML, CSS, JS',
+            stack: [
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'AnimeJS', image:'/images/tech-stack/animejs-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://alkounwebdesigns.netlify.app/'
@@ -36,7 +46,10 @@ export default function MyProjects(){
                 <p className="m-2">Even though I was well versed in HTML, CSS and JavaScript, it would require too much time to create an e-commerce website from scratch, especially without any knowledge of a backend. After I decided to use React with MUI, it became my first React project. Without any prior knowledge of React I rushed to learn components, props, state management and data fetching. I coupled the React frontend with a Medusa.js backend that deals with the inventory and shopping cart mechanics.</p> 
                 <p className="m-2">I lost the project after two weeks of work, and felt as if i had failed, however, upon reflection I had finally learnt React.js and was optimistic to use in future projects.</p>
             </div>,
-            stack: 'React and MedusaJS',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'MedusaJS', image:'/images/tech-stack/html-icon.svg'},
+            ],
             status: 'In-development',
             githubLink: '',
             hostLink: 'https://project-5-ochre.vercel.app/'
@@ -47,7 +60,15 @@ export default function MyProjects(){
                 <p className="m-2">The website for AARC was re-designed a year later using tailwind css, tailgrids templates, and also incorporating animations through state management using AlpineJS.</p> 
                 <p className="m-2">The design was much cleaner, with more use of white. There was a dilemma on whether i should use HTMX, Alpine.js, or React.js, and eventually settled on Alpine.js due to it being readily incorporated into the template. Much of the form functionality carried over from the old website to the redesigned website.</p>
             </div>,
-            stack: 'AlpineJS, NodeJS',
+            stack: [
+                {name:'AlpineJS', image:'/images/tech-stack/alpinejs-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'Taillwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'http://aarctherapy.com/'
@@ -59,7 +80,10 @@ export default function MyProjects(){
                 <p className="m-2">The store is based on an existing Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
                 <p className="m-2">The Hydrogen framework is based on the Remix platform, however i did not spend too much time absorbing the idiosyncracies of Remix, currently it going through a change.</p>
             </div>,
-            stack: 'HydrogenJS, Shopify',
+            stack: [
+                {name:'Hydrogen', image:'/images/tech-stack/shopify-icon.svg'},
+                {name:'Shopify', image:'/images/tech-stack/shopify-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://project-11-ea-hydrogen-shopify.vercel.app/'
@@ -70,7 +94,10 @@ export default function MyProjects(){
                 <p className="m-2">This is a surface level placeholder website for the Mind Muscles Academy business.</p> 
                 <p className="m-2">It was Built using React and Tailwind CSS.</p> 
             </div>,
-            stack: 'ReactJS',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://mindmuscles.net/'
@@ -83,7 +110,15 @@ export default function MyProjects(){
                 <p className="m-2">With the deadline approaching fast, and AI making tremendous leaps, the client suggested using an AI website generator. We picked bolt.new to generate a website according to certain UI principles. The generated website was built using ReactJS and Typescript with NodeJS as a backend.</p>
                 <p className="m-2">However the due to certain demands of inserting user logins and a content management system, the development time increased, and the short-comings of AI generated coding started to rear it's head. Multiple corrections and optimizations had to be made to the AI generated project, solidified principles and strategies regarding ReactJS rendering, Types with ReactJS, React Router, Data fetching using React Query, NodeJS routes and sessions.</p>
             </div>,
-            stack: 'ReactJS, NodeJS',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'Motion', image:'/images/tech-stack/motion-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'MYSQL', image:'/images/tech-stack/mysql-icon.svg'},
+                {name:'SQLite', image:'/images/tech-stack/sqlite-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://resonant-muffin-0c12ee.netlify.app/'
@@ -106,7 +141,13 @@ export default function MyProjects(){
                 <p className="m-2">The project is built using React and Tailwind on the frontend, and NodeJS on the backend.</p> 
                 <p className="m-2">The idea was to buitl a chatbot using the API provided by MistralAI, however imporvements are still required in the project, i.e. using streaming, database, and parsing amrkdown.</p>
             </div>,
-            stack: 'ReactJS, NodeJS, Mistral AI',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'AI: MistralAI (Ollama)', image:'/images/tech-stack/expressjs-icon.svg'},
+            ],
             status: 'In-development',
             githubLink: '',
             hostLink: 'https://project-16-aichatbot-client.netlify.app/'
@@ -118,7 +159,13 @@ export default function MyProjects(){
                 <p className="m-2">The idea behind the app was to allow users to fill out their forms by using AI to match the data required for forms. The app could gather data from past documents, or images of documents. Images would be parsed by the AI and text would be extracted.</p>
                 <p className="m-2">Currently the App is in development, and requires further refinement.</p>
             </div>,
-            stack: 'ReactJS, NodeJS, Qwen-2.5VL (llama)',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'AI: Qwen-2.5VL (Ollama)', image:'/images/tech-stack/expressjs-icon.svg'},
+            ],
             status: 'In-development',
             githubLink: '',
             // hostLink: 'https://project-17-formfiller-client.netlify.app/'
@@ -131,7 +178,10 @@ export default function MyProjects(){
                 <p className="m-2">The project uses nodemailer, however due to the recent inclusion of domain verification for sending emails through popular services, it has become essential to own a domain to be able to sebd emails.</p>
                 <p className="m-2">The project is not functional until or unless a domain is bought to allow emails to be verified.</p>
             </div>,
-            stack: 'NodeJS',
+            stack: [
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: ''
@@ -143,7 +193,10 @@ export default function MyProjects(){
         //         <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
         //         <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
         //     </div>,
-        //     stack: 'NextJS, MedusaJS',
+                // stack: [
+                //     {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                //     {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                // ],
         //     status: 'In-development',
         //     githubLink: '',
         //     hostLink: ''
@@ -151,7 +204,7 @@ export default function MyProjects(){
 
     ]
 
-    const featuredProjects = [
+    const freelanceProjects = [
         {
             name: 'Counselling with Iqra',
             description: <div className='mx-2 mt-2 mb-4'> 
@@ -162,7 +215,12 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/cwi.webp',
             imageAlt: 'Counselling With Iqras website',
-            stack: '11ty, JavaScript, CSS, HTML',
+            stack: [
+                {name:'11ty', image:'/images/tech-stack/11ty-icon.png'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://project-1-cwi-11ty.netlify.app/'
@@ -175,7 +233,13 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/ssi.webp',
             imageAlt: 'Counselling With Iqras website',
-            stack: 'Wordpress',
+            stack: [
+                {name:'Wordpress', image:'/images/tech-stack/wordpress-icon.svg'},
+                {name:'Divi', image:'/images/tech-stack/divi-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://stellarservices.international/'
@@ -188,7 +252,11 @@ export default function MyProjects(){
         //     </div>,
         //     image: '/images/projects/cwi.webp',
         //     imageAlt: 'Counselling With Iqras website',
-        //     stack: 'HTML, CSS, JS',
+                // stack: [
+                //     {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                //     {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                //     {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+                // ],
         //     status: 'In-development',
         //     githubLink: '',
         //     hostLink: 'https://incomparable-naiad-ada14b.netlify.app/'
@@ -200,7 +268,12 @@ export default function MyProjects(){
         //         <p className="m-2">The website was built purely on HTML, CSS and JavaScript. The navigation and animations were entirely handled by JavaScript, and it was the first programming problem I had solved using my existing knowledge of JavaScript at that time. It gave me confidence that I could program in the future.</p> 
         //         <p className="m-2">While it was a great accomplishment, I had further ambitions of inserting 3D Models and levels of interactivity on the website, this led me to come back when I had understood how to use 3D models in web projects.</p>
         //     </div>,
-        //     stack: 'HTML, CSS, JS',
+                // stack: [
+                //     {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                //     {name:'AnimeJS', image:'/images/tech-stack/animejs-icon.svg'},
+                //     {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                //     {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+                // ],
         //     status: 'Complete',
         //     githubLink: '',
         //     hostLink: 'https://alkounwebdesigns.netlify.app/'
@@ -214,7 +287,12 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/awdev.webp',
             imageAlt: 'Awdev portfolio website with 3D scene',
-            stack: 'React 3 Fiber',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'React Three Fiber', image:'/images/tech-stack/threejs-icon.svg'},
+                {name:'Motion', image:'/images/tech-stack/motion-icon.png'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://awdev.netlify.app/'
@@ -226,7 +304,11 @@ export default function MyProjects(){
         //         <p className="m-2">Even though I was well versed in HTML, CSS and JavaScript, it would require too much time to create an e-commerce website from scratch, especially without any knowledge of a backend. After I decided to use React with MUI, it became my first React project. Without any prior knowledge of React I rushed to learn components, props, state management and data fetching. I coupled the React frontend with a Medusa.js backend that deals with the inventory and shopping cart mechanics.</p> 
         //         <p className="m-2">I lost the project after two weeks of work, and felt as if i had failed, however, upon reflection I had finally learnt React.js and was optimistic to use in future projects.</p>
         //     </div>,
-        //     stack: 'React and MedusaJS',
+                // stack: [
+                //     {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                //     {name:'MedusaJS', image:'/images/tech-stack/medusajs-icon.svg'},
+                //     {name:'MUI', image:'/images/tech-stack/mui-icon.svg'},
+                // ],
         //     status: 'In-development',
         //     githubLink: '',
         //     hostLink: 'https://project-5-ochre.vercel.app/'
@@ -240,7 +322,11 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/birthday.webp',
             imageAlt: 'Happy Birthday website with 3D scene',
-            stack: 'React 3 Fiber',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'React Three Fiber', image:'/images/tech-stack/threejs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://project-6-r3f-birthday.netlify.app/'
@@ -265,7 +351,15 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/aarc.webp',
             imageAlt: 'AARC website',
-            stack: 'AlpineJS, NodeJS',
+            stack: [
+                {name:'AlpineJS', image:'/images/tech-stack/alpinejs-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'Taillwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
+                {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'http://aarctherapy.com/'
@@ -277,9 +371,15 @@ export default function MyProjects(){
                 <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
                 <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to display the results.</p>
             </div>,
-            image: '/images/projects/binance.webp',
+            image: '/images/projects/project-crypto.webp',
             imageAlt: 'Binance Surge Table website',
-            stack: 'Astro, SolidJS, NodeJS',
+            stack: [
+                {name:'AstroJS', image:'/images/tech-stack/astrojs-icon.svg'},
+                {name:'SolidJS', image:'/images/tech-stack/solidjs-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'Taillwind', image:'/images/tech-stack/tailwind-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://project-10-ca-react.netlify.app/'
@@ -291,7 +391,12 @@ export default function MyProjects(){
                 <p className="m-2">The project was my first implementation of typescript, on the server or otherwise. It also made me aware of peformance bottlenecks.</p>
                 <p className="m-2">The project has now prompted me to learn Golang as a much more performant and resource efficient language that can be more useful for a project such as this.</p>
             </div>,
-            stack: 'ReactJS, NodeJS',
+            stack: [
+                {name:'SolidJS', image:'/images/tech-stack/solidjs-icon.svg'},
+                {name:'BunJS', image:'/images/tech-stack/bunjs-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
+                {name:'Taillwind', image:'/images/tech-stack/tailwind-icon.svg'},
+            ],
             status: 'In-development',
             githubLink: '',
             hostLink: '#'
@@ -305,7 +410,10 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/eye-analyzer.webp',
             imageAlt: 'Eye analyzer tool website',
-            stack: 'HydrogenJS, Shopify',
+            stack: [
+                {name:'Hydrogen', image:'/images/tech-stack/shopify-icon.svg'},
+                {name:'Shopify', image:'/images/tech-stack/shopify-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://project-11-ea-hydrogen-shopify.vercel.app/'
@@ -318,7 +426,10 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/mma-placeholder.webp',
             imageAlt: 'MMA placeholder website',
-            stack: 'ReactJS',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'}
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://mindmuscles.net/'
@@ -333,7 +444,15 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/mma.webp',
             imageAlt: 'MMA website',
-            stack: 'ReactJS, NodeJS',
+            stack: [
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'Motion', image:'/images/tech-stack/motion-icon.png'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+                {name:'ExpressJS', image:'/images/tech-stack/expressjs-icon.svg'},
+                {name:'MYSQL', image:'/images/tech-stack/mysql-icon.svg'},
+                {name:'SQLite', image:'/images/tech-stack/sqlite-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://resonant-muffin-0c12ee.netlify.app/'
@@ -345,7 +464,10 @@ export default function MyProjects(){
         //         <p className="m-2">The store is based on an exosting Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
         //         <p className="m-2">The Hyrogen framework is based on the Remix platform, however i did not spend too much time understanding the idiosyncracies of Remix, and it is going through yet another change.</p>
         //     </div>,
-        //     stack: 'ReactJS, MedusaJS',
+                // stack: [
+                //     {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                //     {name:'MedusaJS', image:'/images/tech-stack/html-icon.svg'},
+                // ],
         //     status: 'In-development',
         //     githubLink: '',
         //     hostLink: ''
@@ -359,7 +481,11 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/apex.webp',
             imageAlt: 'Apex Synergy website',
-            stack: 'NextJS, TailwindCSS, PHP',
+            stack: [
+                {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'PHP', image:'/images/tech-stack/php-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://apexsynergymc.com/'
@@ -373,7 +499,10 @@ export default function MyProjects(){
             </div>,
             image: '/images/projects/mariam.webp',
             imageAlt: "Mariam Shawki's website",
-            stack: 'NextJS, TailwindCSS',
+            stack: [
+                {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+            ],
             status: 'Complete',
             githubLink: '',
             hostLink: 'https://mariamshawki.netlify.app/'
@@ -429,9 +558,13 @@ export default function MyProjects(){
 
     ]
 
+    const featuredProjects = freelanceProjects.reverse()
+    
+    const projectsDisplayed = ['Featured Projects', 'Other Projects']
+
     const [index, setIndex] = useState(0)
 
-    return(
+    return (
         <>
         <motion.div           
           initial={{ opacity: 0, translateY: 5 }}
@@ -441,7 +574,9 @@ export default function MyProjects(){
           className="grid grid-cols-subgrid col-start-2 col-end-12 md:col-span-5 lg:col-start-2 lg:col-end-6 md:row-span-6 backdrop-blur-2xl rounded-sm border border-gray-500 p-2 text-sm overflow-auto"
         >
             <div className="col-span-full m-2">
+                {/* {projectsDisplayed?  */}
                 <h3 className="text-xl">Featured Projects</h3>
+                {/* <h3 className="text-xl">Other Projects</h3> */}
             </div>
             <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
                 <img src={featuredProjects[index].image} className="object-center" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
@@ -458,7 +593,7 @@ export default function MyProjects(){
                     </div>
                 </div>
                 {featuredProjects.map((project, i) => (
-                    <p key={project} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
+                    <p key={project.name} className={`${ i - 1 < index ? 'inline text-gray-100 select-none' : 'inline text-gray-600 select-none' }`}><Dot /></p>
                 ))}
             </div>
         </motion.div>
@@ -476,8 +611,14 @@ export default function MyProjects(){
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
                     className=''>
-                    <p className={`${featuredProjects[index].status === 'Complete' ? 'text-green-400 m-2' : 'text-orange-500 m-2'}`}>Status: {featuredProjects[index].status}</p>
-                    <p className="m-2">Stack: {featuredProjects[index].stack}</p>
+                    { featuredProjects[index].status === 'Complete' ? <p>Status: <GreenDot/>{featuredProjects[index].status}</p> 
+                    : <p>Status: <OrangeDot/>{featuredProjects[index].status}</p>}
+                    <p className="m-2">Tech Stack: {featuredProjects[index].stack.map((techStack) => (
+                        <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+                            <img src={techStack.image} className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+                            <span className="my-auto">{techStack.name}</span>
+                        </span>
+                    ))}</p>
                     <div>
                         <p className="m-2">About Project:</p>{featuredProjects[index].description}
                     </div>
