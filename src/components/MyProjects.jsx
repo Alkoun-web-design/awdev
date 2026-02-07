@@ -209,8 +209,8 @@ const otherProjects = [
             name: 'Counselling with Iqra',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <dl>
-                    <dt className='m-2'>What I built</dt>
-                    <dd className='m-2'>A business website for a psychologist/psychotherapist to inform clients and to allow them to get in touch with them, with blogging capabilities</dd>
+                    <dt className='m-2'>A business website for a psychologist/psychotherapist to inform clients and to allow them to get in touch with them, with blogging capabilities</dt>
+                    <dd className='m-2'></dd>
                     <dt className='m-2'>I learnt</dt>
                     <dd className='m-2'>to use 11ty to develop a Statically generated website (SSG) and also implementing markdown files for blogging on the website.</dd>
                     <dt className='m-2'>The benefit</dt>
@@ -424,8 +424,9 @@ const otherProjects = [
             image: '/images/projects/eye-analyzer.webp',
             imageAlt: 'Eye analyzer tool website',
             stack: [
-                {name:'Hydrogen', image:'/images/tech-stack/shopify-icon.svg'},
-                {name:'Shopify', image:'/images/tech-stack/shopify-icon.svg'}
+                {name:'Hydrogen', image:'/images/tech-stack/hydrogen-icon.svg'},
+                {name:'Shopify', image:'/images/tech-stack/shopify-icon.svg'},
+                {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'}
             ],
             status: 'Complete',
             githubLink: '',
@@ -571,11 +572,9 @@ const otherProjects = [
 
     ]
 
-export default function MyProjects(){
-
-    
-
     const featuredProjects = freelanceProjects.reverse()
+
+export default function MyProjects(){
     
     const projectsDisplayed = ['Featured Projects', 'Other Projects']
 
