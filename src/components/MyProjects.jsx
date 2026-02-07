@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { LeftChevron, RightChevron, Link, Dot, GreenDot, OrangeDot } from "./Icons";
 import { motion } from 'motion/react';
-export default function MyProjects(){
 
-    const otherProjects = [
+
+const otherProjects = [
         {
             name: 'Art Gallery Website',
             description: <div className='mx-2 mt-2 mb-4'> 
@@ -208,7 +208,20 @@ export default function MyProjects(){
         {
             name: 'Counselling with Iqra',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A psychologist who wanted a business website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme, and then deployed on a standard hosting service provider providing for wordpress hosting, with a domain name.</p> 
+                <dl>
+                    <dt className='m-2'>What I built</dt>
+                    <dd className='m-2'>A business website for a psychologist/psychotherapist to inform clients and to allow them to get in touch with them, with blogging capabilities</dd>
+                    <dt className='m-2'>I learnt</dt>
+                    <dd className='m-2'>to use 11ty to develop a Statically generated website (SSG) and also implementing markdown files for blogging on the website.</dd>
+                    <dt className='m-2'>The benefit</dt>
+                    <dd className='m-2'>The Psycholgist Ms.Iqra Naz benefitted from being able to reach new client and also establish an online presence.</dd>
+                    <dt className='m-2'>The Challenges</dt>
+                    <dd className='m-2'>I had created an earlier version with HTML, CSS and JavaScript and publisehd that as a wordpress theme to allow Ms. Iqra Naz to blog using wordpress.
+                     However the costs of hosting the website and paying for the domain name, added to her costs. The previous desing of the website was also lackluster. 
+                     I had completed a design course and re-designed the website but also deployed it to netlify as the traffic for the website was not very high.
+                     The blogging was added through markdown files to the folder.</dd>
+                </dl>
+                <p className="m-2">A simple psychologist who wanted a business website with blogging capabilities. It was originally created using HTML, CSS, JavaScript and PHP as a custom wordpress theme, and then deployed on a standard hosting service provider providing for wordpress hosting, with a domain name.</p> 
                 <p className="m-2">Later the client sought to have their website redesigned, hosted without paying the hosting charges, and maintain the blogging capabilities of the original.</p>
                 <p className="m-2">I knew of netlify's free tier and support for static site generators and front end web apps and websites. I redesigned the website after taking a UI/UX course from Udemy, using HTML, CSS JavaScript, and a static site generator called 11ty. the blogging capabilities were reserved, as the client could now write in markdown files and insert them into a "blogs" folder to dynamically assemble a page for the new blog.</p>
                 <p className='m-2'>The project gave me an understanding of creating custom wordpress themes using HTML, CSS, JavaScript and PHP to create a wordpress theme. Later the use of  11ty with "Nunjucks" as a templating language allowed for me to use templates and inserting of blogs through markdown files.</p>
@@ -557,6 +570,10 @@ export default function MyProjects(){
         // },
 
     ]
+
+export default function MyProjects(){
+
+    
 
     const featuredProjects = freelanceProjects.reverse()
     

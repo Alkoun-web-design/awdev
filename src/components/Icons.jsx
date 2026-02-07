@@ -158,3 +158,9 @@ export function LoadingBlip() {
 		</svg>
 	)
 }
+
+// what build?
+// what learn?
+// what benefit?
+// what challenges?
+// how did you deal?
