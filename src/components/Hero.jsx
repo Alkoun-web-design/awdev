@@ -8,8 +8,8 @@ export default function Hero() {
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
           className="col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded-xl border border-gray-500 p-2 text-gray-100 overflow-auto">
-          <h1 className="text-xl md:text-5xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
-          <h2 className="text-xl md:text-2xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
+          <h1 className="text-xl md:text-4xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
+          <h2 className="text-lg md:text-xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
           <div className="flex flex-row ml-auto font-[Roboto] flex-wrap text-sm">
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
               <img src="/images/tech-stack/js-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
@@ -56,6 +56,10 @@ export default function Hero() {
               <span className="my-auto">Astro.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+              <img src="/images/tech-stack/threejs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <span className="my-auto">React Three Fiber</span>
+            </span>
+            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
               <img src="/images/tech-stack/11ty-icon.png" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
               <span className="my-auto">11ty</span>
             </span>
@@ -66,6 +70,22 @@ export default function Hero() {
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
               <img src="/images/tech-stack/html-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
               <span className="my-auto">HTML5</span>
+            </span>
+            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+              <img src="/images/tech-stack/wordpress-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <span className="my-auto">Wordpress</span>
+            </span>
+            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+              <img src="/images/tech-stack/mysql-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <span className="my-auto">MySQL</span>
+            </span>
+            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+              <img src="/images/tech-stack/sqlite-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <span className="my-auto">SQLite</span>
+            </span>
+            <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
+              <img src="/images/git-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <span className="my-auto">Git</span>
             </span>
           </div>
           {/* <p className="font-[Roboto] my-4">Frontend & Fullstack dev in JavaScript | TypeScript | React | Next.js | Node | Tailwind | Express. Working on an E-commerce website | learning Go. Blender and interested in XR.</p> */}

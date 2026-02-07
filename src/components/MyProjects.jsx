@@ -13,7 +13,6 @@ const otherProjects = [
             image: '/images/projects/cwi.webp',
             imageAlt: 'Counselling With Iqras website',
             stack: [
-                {name:'11ty', image:'/images/tech-stack/11ty-icon.png'},
                 {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
                 {name:'HTML5', image:'/images/tech-stack/html-icon.svg'},
                 {name:'CSS3', image:'/images/tech-stack/css-icon.svg'},
@@ -384,7 +383,7 @@ const otherProjects = [
                 <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
                 <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to display the results.</p>
             </div>,
-            image: '/images/projects/project-crypto.webp',
+            image: '/images/projects/binance.webp',
             imageAlt: 'Binance Surge Table website',
             stack: [
                 {name:'AstroJS', image:'/images/tech-stack/astrojs-icon.svg'},
@@ -404,6 +403,8 @@ const otherProjects = [
                 <p className="m-2">The project was my first implementation of typescript, on the server or otherwise. It also made me aware of peformance bottlenecks.</p>
                 <p className="m-2">The project has now prompted me to learn Golang as a much more performant and resource efficient language that can be more useful for a project such as this.</p>
             </div>,
+            image: '/images/projects/project-crypto.webp',
+            imageAlt: 'Binance Surge Table website',
             stack: [
                 {name:'SolidJS', image:'/images/tech-stack/solidjs-icon.svg'},
                 {name:'BunJS', image:'/images/tech-stack/bunjs-icon.svg'},
@@ -595,7 +596,7 @@ export default function MyProjects(){
                 {/* <h3 className="text-xl">Other Projects</h3> */}
             </div>
             <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>
-                <img src={featuredProjects[index].image} className="object-center" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
+                <img src={featuredProjects[index].image} className="object-contain mx-auto" loading="lazy" alt={featuredProjects[index].imageAlt}/> 
                 <div className="flex flex-row mx-auto my-2">
                     <div onClick={() => {index === 0 ? setIndex(featuredProjects.length-1) : setIndex(index-1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-4 cursor-pointer rounded-sm'>
                         <LeftChevron className='h-6 w-6' />
