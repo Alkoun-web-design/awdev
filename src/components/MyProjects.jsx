@@ -408,6 +408,7 @@ const otherProjects = [
             stack: [
                 {name:'SolidJS', image:'/images/tech-stack/solidjs-icon.svg'},
                 {name:'BunJS', image:'/images/tech-stack/bunjs-icon.svg'},
+                {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
                 {name:'JavaScript', image:'/images/tech-stack/js-icon.svg'},
                 {name:'Taillwind', image:'/images/tech-stack/tailwind-icon.svg'},
             ],
@@ -435,9 +436,12 @@ const otherProjects = [
         },
         {
             name: 'Mind Muscles placeholder website',
-            description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">This is a surface level placeholder website for the Mind Muscles Academy business.</p> 
-                <p className="m-2">It was Built using React and Tailwind CSS.</p> 
+            description: <div className='mx-2 mt-2 mb-4'>
+                <p className="m-2">A quick placeholder website to show visitors that development is under progress, using React and Tailwind CSS.</p>  
+                <p className="m-2">The idea was to quickly establish the online presence of the business so that clients and partners can be assured that the entity exists aand is continuing operations.</p> 
+                <p className="m-2">The challenge was to establish a placeholder website within a few days.</p> 
+                <p className="m-2">I used React and tailwind CSS to quickly build a website with a blurred background to show the countours of a navigation and the feeling of a work in progress.</p> 
+                <p className="m-2">I learnt how to build th ewebsite using React and Tailwind CSS and then statically generate files to be hosted on a traditional web hsoting platform.</p> 
             </div>,
             image: '/images/projects/mma-placeholder.webp',
             imageAlt: 'MMA placeholder website',
@@ -452,15 +456,17 @@ const otherProjects = [
         {
             name: 'Mind Muscles Academy website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">The complete website for the Mind Muscles Academy business. The frontend was developed using ReactJS and TypeScript, while the backend relies on NodeJS and Express, with a MySQL Database.</p> 
-                <p className="m-2">The project went through several iterations in development. It started out as an Astro project using an SQLite Database, and a custom frontend designed by a graphics designer. Then the website was to use ReactJS and NodeJS with UI templates from tailgrids.</p>
-                <p className="m-2">With the deadline approaching fast, and AI making tremendous leaps, the client suggested using an AI website generator. We picked bolt.new to generate a website according to certain UI principles. The generated website was built using ReactJS and Typescript with NodeJS as a backend.</p>
-                <p className="m-2">However the due to certain demands of inserting user logins and a content management system, the development time increased, and the short-comings of AI generated coding started to rear it's head. Multiple corrections and optimizations had to be made to the AI generated project, solidified principles and strategies regarding ReactJS rendering, Types with ReactJS, React Router, Data fetching using React Query, NodeJS routes and sessions.</p>
+                <p className="m-2">A complete website, CMS and user platform for tutors, counsellors, and soon students for a schooling business built in React, TypeScript, Node.js, express.js and MySQL and SQLite.</p> 
+                <p className="m-2">The website would be a all in one platform all tutors, admins, counsellors, and soon students for interacting with the academy. </p>
+                <p className="m-2">The challenges were numerous, as I had to integrate a react frontend with a node.js and express.js backend to serve content from a database and also allow secure logging in into unique roles for allowing profile edits, curriculum access and CMS capabailities under a tight deadline. This was also my first Typescript with React project. I also had to keep queries to the backedn and the database under a certain limit.</p>
+                <p className="m-2">Upon the insistence of the client, I used an AI to generate a website, however even with coding assistants the technical demands could not be met, so I learnt react patterns and storing passwords and sessions as well.</p> 
+                <p className="m-2">I learnt typescript with react, integrating a backend which responded efficiently to fetch calls using React Query, restricted routes in React which could only be accessed after emails and passwords matched, and user sessions could be gneerated and stored.</p>
             </div>,
             image: '/images/projects/mma.webp',
             imageAlt: 'MMA website',
             stack: [
                 {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
                 {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
                 {name:'Motion', image:'/images/tech-stack/motion-icon.png'},
                 {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
@@ -490,14 +496,17 @@ const otherProjects = [
         {
             name: 'Apex Synergy website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A simple website for a software outsourcing business, built on React, TailwindCSS and PHP.</p> 
-                <p className="m-2">The website was first developed in AlpineJS, however, the business wanted a blogging section aswell.</p>
-                <p className="m-2">The website is currently under active development.</p>
+                <p className="m-2">A website and a blogging platform for a software outsourcing company, built in Next.js and styled in Tailwind CSS, while using PHP on the backend.</p> 
+                <p className="m-2">The company wanted an online presence to provide their prospective clients and partners information regarding their services and activities.</p>
+                <p className="m-2">The challenge was to create a website that could be built and deplyed as quickly as possible, whilst allowing SEO and SERP ranking.</p>
+                <p className="m-2">I used a statically built Next.js website with SEO and image optimization. I also used the client's familiarity with wordpress as a CMS for generating blog posts on the Next.js website.</p>
+                <p className="m-2">I further strengthened my understanding of SEO with Next.js, the dynamic loading and generation of blog pages with an external CMS, email-handling with PHP, and statically generated sites using Next.js </p>
             </div>,
             image: '/images/projects/apex.webp',
             imageAlt: 'Apex Synergy website',
             stack: [
                 {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
                 {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
                 {name:'PHP', image:'/images/tech-stack/php-icon.svg'},
             ],
@@ -508,14 +517,18 @@ const otherProjects = [
         {
             name: "Mariam's Portfolio website",
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A relatively simple portfolio website for a professional built on React and Tailwind CSS.</p> 
-                <p className="m-2">Templates were used to quickly develop the website for being used by the professional.</p>
-                <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p>
+                <p className="m-2">A portfolio website for a young marketing professional, built on Next.js and Tailwind CSS.</p> 
+                <p className="m-2">The website allowed her to showcase her projects, communicate her skills and value to her potential employers.</p> 
+                <p className="m-2">The challenge was to quickly create a website that updateable with each deployment, reactive and SEO friendly.</p>
+                <p className="m-2">I edited a template built in React to create the website as quickly as possible, and compiled components into a Next.js app to harness SEO benefits, while using AI generated imagery for images.</p>
+                <p className="m-2">I learnt using the head, image and link components from Next.js, used better image optimization for low CLS, FCP and also improved my understanding of a Next.js project structure.</p>
+                {/* <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p> */}
             </div>,
             image: '/images/projects/mariam.webp',
             imageAlt: "Mariam Shawki's website",
             stack: [
                 {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
                 {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
             ],
             status: 'Complete',
@@ -558,18 +571,24 @@ const otherProjects = [
         //     githubLink: '',
         //     hostLink: ''
         // },
-        // {
-        //     name: 'Ecommerce webapp',
-        //     description: <div className='mx-2 mt-2 mb-4'> 
-        //         <p className="m-2">An ecommerce store built using NextJS and MedusaJS.</p> 
-        //         <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
-        //         <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
-        //     </div>,
-        //     stack: 'NextJS, MedusaJS',
-        //     status: 'In-development',
-        //     githubLink: '',
-        //     hostLink: ''
-        // },
+        {
+            name: 'Ecommerce Website',
+            description: <div className='mx-2 mt-2 mb-4'> 
+                <p className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript, Node.js.</p> 
+                <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
+                <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
+            </div>,
+            stack: [
+                {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+            ],
+            status: 'In-development',
+            githubLink: '',
+            hostLink: ''
+        },
 
     ]
 
@@ -592,7 +611,7 @@ export default function MyProjects(){
         >
             <div className="col-span-full m-2">
                 {/* {projectsDisplayed?  */}
-                <h3 className="text-xl">Featured Projects</h3>
+                <h3 className="text-xl">Freelance Projects</h3>
                 {/* <h3 className="text-xl">Other Projects</h3> */}
             </div>
             <div className='col-span-full text-center justify-items-center font-[Roboto] align-start'>

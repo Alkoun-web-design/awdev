@@ -164,3 +164,9 @@ export function LoadingBlip() {
 // what benefit?
 // what challenges?
 // how did you deal?
+
+//build, 
+// benefits, 
+// challenges, 
+// deal,
+// learn
