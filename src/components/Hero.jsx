@@ -12,79 +12,79 @@ export default function Hero() {
           <h2 className="text-lg md:text-xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
           <div className="flex flex-row ml-auto font-[Roboto] flex-wrap text-sm">
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/js-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/js-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">JavaScript</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/ts-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/ts-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">TypeScript</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/reactjs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/reactjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">React</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/nextjs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/nextjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Next.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/nodejs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/nodejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Node.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/expressjs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/expressjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Express.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/alpinejs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/alpinejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Alpine.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/solidjs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/solidjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Solid.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/tailwind-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/tailwind-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Tailwind</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/bunjs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/bunjs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Bun.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/astrojs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/astrojs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Astro.js</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/threejs-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/threejs-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">React Three Fiber</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/11ty-icon.png" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/11ty-icon.png" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">11ty</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/css-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/css-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">CSS3</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/html-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/html-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">HTML5</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/wordpress-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/wordpress-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Wordpress</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/mysql-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/mysql-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">MySQL</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/tech-stack/sqlite-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/tech-stack/sqlite-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">SQLite</span>
             </span>
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
-              <img src="/images/git-icon.svg" className="inline w-6 h-6 ml-3 mr-1 my-1"/>
+              <img src="/images/git-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
               <span className="my-auto">Git</span>
             </span>
           </div>

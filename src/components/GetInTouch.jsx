@@ -37,7 +37,7 @@ export default function GetInTouch() {
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.2 }}
                 >
-                  <img src={contactMethods[index].image} className="mx-auto h-10 w-10"/>
+                  <img src={contactMethods[index].image} className="mx-auto h-6 w-6"/>
                   {/* <p className="inline-block align-middle ml-1">{contactMethods[index].method}: </p> */}
                 </motion.a>
                 <div onClick={() => {index === contactMethods.length-1 ? setIndex(0) : setIndex(index+1)}} className='bg-gray-900 text-gray-100 hover:bg-gray-100 hover:text-black transition-all h-fit w-fit mx-1 cursor-pointer rounded-sm' >
