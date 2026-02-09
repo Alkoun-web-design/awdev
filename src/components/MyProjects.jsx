@@ -323,8 +323,10 @@ const otherProjects = [
             name: 'Birthday wishing website',
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">My first React Three Fiber website, it was originally designed to wish someone personally on their birthday.</p> 
-                <p className="m-2">The scene was originally inside a cafe with balloons, two cakes, and people seated at their tables. Another building was visible through the window from across the street.</p>
-                <p className="m-2">I recently redesigned the scene to have fewer models, with smaller sizes and animations, with the aim of communicating the message through angles and objects, instead of building an complete scene. This resulted in better loading times, better performance with the least usage of resources.</p>
+                <p className="m-2">3D scenes in websites arent as frequent an experience, So to wish someone with a 3D orchestrated scene would be a different experience.</p>
+                <p className="m-2">The challenges revolved around using 3D assets with the least amount of impact on load times with the intention of communicating the message and atomosphere of a birthday party.</p>
+                <p className="m-2">The scene was initially inside a cafe, but the scene required too many assets, so a camera angle that focused on minimal 3D assets to communicate a birthday gathering was opted for.</p>
+                <p className="m-2">I learnt to orchestrate minimal 3D scenes to communicate the message, with compressed and optimized textures and 3D models to reduce loading times and resource consumption as much as possible.</p>
             </div>,
             image: '/images/projects/birthday.webp',
             imageAlt: 'Happy Birthday website with 3D scene',
