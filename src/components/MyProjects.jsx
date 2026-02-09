@@ -527,7 +527,6 @@ const otherProjects = [
                 <p className="m-2">The challenge was to quickly create a website that updateable with each deployment, reactive and SEO friendly.</p>
                 <p className="m-2">I edited a template built in React to create the website as quickly as possible, and compiled components into a Next.js app to harness SEO benefits, while using AI generated imagery for images.</p>
                 <p className="m-2">I learnt using the head, image and link components from Next.js, used better image optimization for low CLS, FCP and also improved my understanding of a Next.js project structure.</p>
-                {/* <p className="m-2">Further improvements for the website include utilizing React Three Fiber, and particlualrly low-poly isometric 3d models.</p> */}
             </div>,
             image: '/images/projects/mariam.webp',
             imageAlt: "Mariam Shawki's website",
@@ -579,10 +578,14 @@ const otherProjects = [
         {
             name: 'Ecommerce Website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript, Node.js.</p> 
-                <p className="m-2">The e-commerce store is currently a template and no specific change shave been made yet.</p>
-                <p className="m-2">The project should provide practice for NextJS, and developed React framework, and MedusAJS specifically for the backend and managing the E-commerce store.</p>
+                <p className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript and Node.js.</p>
+                <p className="m-2">A template for e-commerce websites to allow for quick development of other e-commerce websites.</p>  
+                <p className="m-2">The challenge was to build an e-commerce website that allowed good SEO, good customer experience according to their expectations, and quick development on the frontend and backend.</p>
+                <p className="m-2">I utilized Next.js strengths in SEO, and its server and client components, API routes, coupled with interactivity and reactivity using React. I also used Baymard Insititute's guides on E-commerce UX.</p>
+                <p className="m-2">I learnt the intricacies of e-commerce UX, Next.js API routes, payments processors and shopping cart state managemnt.</p>
             </div>,
+            image: '/images/projects/ecom-next.webp',
+            imageAlt: "A Next.js e-commerce website",
             stack: [
                 {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
                 {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
@@ -592,7 +595,7 @@ const otherProjects = [
             ],
             status: 'In-development',
             githubLink: '',
-            hostLink: ''
+            hostLink: 'https://project-21-next-store.vercel.app/'
         },
 
     ]
