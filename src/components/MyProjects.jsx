@@ -285,9 +285,11 @@ const otherProjects = [
         {
             name: 'AWDev website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">I redesigned the portfolio website to reflect the original ambitions of the first one, using React and React Three Fiber.</p> 
-                <p className="m-2">I came back to the website years later to finally use 3D models for a scene based in space, once I had grown comfortable with React. However I realized I need to further understand animations, compression, editing of meshes and textures regarding 3D models.</p>
-                <p className="m-2">I learnt to use drei tools, effective scene building, use of simple animations, custom models with custom textures, and optimized 3d models. However there is plenty to learn, and my portfolio website serves as a perfect testing ground for Augmented Reality and Virtual Reality.</p>
+                <p className="m-2">I rebuilt and redesigned my portfolio website to showcase the tech stack used, my experience, my projects with a little bit abont me.</p> 
+                <p className="m-2">As a freelancing web developer, A portfolio website is essential to not only communicate past experience and accomplishments, but also future ambitions and interests,</p> 
+                <p className="m-2">I needed a portfolio to not only communicate my expertise and value in web development, but also my interest and ambitions in XR development.</p> 
+                <p className="m-2">I used React with Tailwind to create a grid layout. I am intrigued by space and the universe, and I used React Three Fiber to use 3d models to create a scene in the background.</p> 
+                <p className="m-2">I learnt to use React Three Fiber with drei tools, effective scene building, linear 3D animations, custom and optimized textures and 3D models. There remains much to be learnt in XR.</p> 
             </div>,
             image: '/images/projects/awdev.webp',
             imageAlt: 'Awdev portfolio website with 3D scene',
