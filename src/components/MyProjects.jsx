@@ -354,8 +354,11 @@ const otherProjects = [
         {
             name: 'AARC',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">The website for AARC was re-designed a year later using tailwind css, tailgrids templates, and also incorporating animations through state management using AlpineJS.</p> 
-                <p className="m-2">The design was much cleaner, with more use of white. There was a dilemma on whether i should use HTMX, Alpine.js, or React.js, and eventually settled on Alpine.js due to it being readily incorporated into the template. Much of the form functionality carried over from the old website to the redesigned website.</p>
+                <p className="m-2">A statically served website, built on HTML, CSS, Tailwind and JavaScript with Alpine.js for state management, and a Node.js backend with an Express.js server.</p>
+                <p className="m-2">With less JavaScript shipped to the client and more HTML web pages ready for crawling, the business will benefit from SEO and higher SERP.</p>
+                <p className="m-2">The challenge was to maintain interactivity and reactivity available in other libraries and frameworks while maintaining better crawalablity of the wbesite and its content.</p>
+                <p className="m-2">By maintiaing the original stack and simply adding Alpine.js for reactivity, we were able to achieve the benefits of React without the drawbacks affecting SEO and build complexity, whilst using a cleaner UI and better UX for visitor satisfaction.</p>
+                <p className="m-2">I gained a better understanding and appreciation of server side rendered websites, as there was less complexity, npm packages and build size involved.</p>
             </div>,
             image: '/images/projects/aarc.webp',
             imageAlt: 'AARC website',
