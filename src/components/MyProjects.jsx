@@ -400,9 +400,11 @@ const otherProjects = [
         {
             name: 'Cryptocurrency Project',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">An improvement from the previous project, built using ReactJS and NodeJS with typescript on the backend.</p> 
-                <p className="m-2">The project was my first implementation of typescript, on the server or otherwise. It also made me aware of peformance bottlenecks.</p>
-                <p className="m-2">The project has now prompted me to learn Golang as a much more performant and resource efficient language that can be more useful for a project such as this.</p>
+                <p className="m-2">The project was built to improve on the previous project, built using Solid.js and Bun.js with typescript on the backend.</p>
+                <p className="m-2">The benefit of using Solid.js with Bun.js was to maximize performance, while maintaining focus on strategies for improvinf trading.</p> 
+                <p className="m-2">The main challenges were to simplify data manipulation, storage and retrieval on larger datatsets whilst maintaining large numbers of websocket connections.</p> 
+                <p className="m-2">We implemented websockets again, but with sets and maps to ensure faster and efficient lookups.</p>
+                <p className="m-2">I learnt the use of typescript and its benefits and catching type errors early, as the better implementation of effects, sorting and fetching on the frontend whilst being mindful of performance bottlenecks. This experience prompted me to learn golang.</p>
             </div>,
             image: '/images/projects/project-crypto.webp',
             imageAlt: 'Binance Surge Table website',
@@ -420,9 +422,11 @@ const otherProjects = [
         {
             name: 'Eye Analyzing Tool website',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">This is an e-commerce site, selling one or two products, built on shopify's Headless Commerce framework: Hydrogen.</p> 
-                <p className="m-2">The store is based on an existing Hydrogen e-commerce template, that required a few specific edits and changes. Unfortunately, since the website was made a few years ago, some of the dependencies have become outdated, and uploading the latest version could break the website.</p>
-                <p className="m-2">The Hydrogen framework is based on the Remix platform, however i did not spend too much time absorbing the idiosyncracies of Remix, currently it going through a change.</p>
+                <p className="m-2">An e-commerce website selling one product with two variants, built on shopify's Headless e-commerce framework Hydrogen.</p>
+                <p className="m-2">The website offered the client to sell their product online to a niche market. Due to their familiarity of Shopify's dashboard, </p> 
+                <p className="m-2">The challenge was to provide the client with a quick e-commerce website and dashboard that htye could themselved manage.</p> 
+                <p className="m-2">I used Shopify's frontend framwework called hydrogen that is connected to the users shopify dahsboard through APIs. This allwoed for a quicker developemnt time and more familiarity for the client.</p> 
+                <p className="m-2">I learnt to develop and use Shopify's Hydrogen framework to quickly launch an e-commerce website.</p> 
             </div>,
             image: '/images/projects/eye-analyzer.webp',
             imageAlt: 'Eye analyzer tool website',
