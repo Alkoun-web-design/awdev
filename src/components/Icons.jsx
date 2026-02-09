@@ -165,7 +165,7 @@ export function LoadingBlip() {
 // what challenges?
 // how did you deal?
 
-//build, 
+// build, 
 // benefits, 
 // challenges, 
 // deal,
