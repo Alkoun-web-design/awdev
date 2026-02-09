@@ -378,9 +378,11 @@ const otherProjects = [
         {
             name: 'Binance Cryptocurrency Table',
             description: <div className='mx-2 mt-2 mb-4'> 
-                <p className="m-2">A personal project, built using SolidJS through the Astro framework for performance in mind. There was much being made of signals and how they improved performance by removed the shadow DOM update step, therefore i was inclined use it for this particular web-app.</p> 
-                <p className="m-2">The project's goal was to display real-time data from Binance, and to provide a surge percentage of coins that had risen in value. the project allowed me to retrieve data through websocket connections, and taught me the specifics of manipulating data in JavaScript.</p>
-                <p className="m-2">The project later evolved from simply on the browser, to performing calculations and data gathering on a NodeJs server, with a React frontend to display the results.</p>
+                <p className="m-2">A personal project that displays the value of spot cryptocurrencies on Binance, built using SolidJS through the Astro framework and Node.js on the backend that communicates with binance and the client through websockets.</p> 
+                <p className="m-2">The project was built initially to aid in trading on cryptocurrencies on binance's platform.</p>
+                <p className="m-2">The challenge was to manipualte and base caluclations on Binance's own data every second on all spot cryptocurrencies, and then send the data back to the client for presentation.</p>
+                <p className="m-2">Signals improved performance by removing the shadow DOM update step, allowing quicker and effortless updates as compared to React. Websockets were used to ensure immediate updates and calculations on each incoming message.</p> 
+                <p className="m-2">The project allowed me to gain a higher understanding of working with data types, and mutating, storing and later displayiong the same data. However this led to an understanding that this project was ill-equipped to aid in trading.</p>
             </div>,
             image: '/images/projects/binance.webp',
             imageAlt: 'Binance Surge Table website',
