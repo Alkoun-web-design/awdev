@@ -287,9 +287,9 @@ const otherProjects = [
             description: <div className='mx-2 mt-2 mb-4'> 
                 <p className="m-2">I rebuilt and redesigned my portfolio website to showcase the tech stack used, my experience, my projects with a little bit abont me.</p> 
                 <p className="m-2">As a freelancing web developer, A portfolio website is essential to not only communicate past experience and accomplishments, but also future ambitions and interests,</p> 
-                <p className="m-2">I needed a portfolio to not only communicate my expertise and value in web development, but also my interest and ambitions in XR development.</p> 
-                <p className="m-2">I used React with Tailwind to create a grid layout. I am intrigued by space and the universe, and I used React Three Fiber to use 3d models to create a scene in the background.</p> 
-                <p className="m-2">I learnt to use React Three Fiber with drei tools, effective scene building, linear 3D animations, custom and optimized textures and 3D models. There remains much to be learnt in XR.</p> 
+                <p className="m-2">I needed a portfolio to not only communicate my expertise and value in web development, but also my interest and ambitions in XR development, however 3D models are much larger assets</p> 
+                <p className="m-2">I used React with Tailwind to create a grid layout. I am intrigued by space and the universe, and I used React Three Fiber to use 3d models to create a scene in the background. Finally i used dynamic imports to defer loading of 3D and audio assets to achieve faster load times.</p> 
+                <p className="m-2">I learnt to use React Three Fiber with drei tools, effective scene building, linear 3D animations, custom and optimized textures and 3D models and dynamic imports to achieve better load times with 3D assets. There remains much to be learnt in XR.</p> 
             </div>,
             image: '/images/projects/awdev.webp',
             imageAlt: 'Awdev portfolio website with 3D scene',
