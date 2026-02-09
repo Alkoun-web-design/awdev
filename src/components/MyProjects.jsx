@@ -232,7 +232,8 @@ const otherProjects = [
                 <p className="m-2">A business website for a subsidiary of Canam Steel Pvt Ltd. It was developed using the Divi Builder on wordpress.</p>
                 <p className="m-2">The business wanted the website to provide legitimacy and online presence for prospective partners, businesses and employees.</p>  
                 <p className="m-2">The challenge was to build a website within a tight deadline with a clean UI using wordpress.</p> 
-                <p className="m-2">Before designing the website, I undertook a website designing course from Udemy. with this new approach, I focused on using a builder so I can have maximum focus on designing rather than development.</p>
+                <p className="m-2">After completing a UI and UX course on Udemy, I foucs entirely on the design and aspects of the website and opted to use a builder to ensure my focus would nto deviate towards programming and coding. For this instance, I opted to use the Divi Builder with their theme and custom made components.</p> 
+                <p className="m-2">I learnt to implement basic deisgn principles on web elements. I also gained a new appreciation of UI builders.</p>
             </div>,
             image: '/images/projects/ssi.webp',
             imageAlt: 'Counselling With Iqras website',
