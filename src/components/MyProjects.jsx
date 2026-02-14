@@ -609,30 +609,30 @@ const otherProjects = [
             ],
             status: 'In-development',
             githubLink: '',
+            hostLink: '/'
+        },
+        {
+            name: 'Emergence',
+            description: <div className='mx-2 mt-2 mb-4'> 
+                <p className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript and Node.js.</p>
+                <p className="m-2">A template for e-commerce websites to allow for quick development of other e-commerce websites.</p>  
+                <p className="m-2">The challenge was to build an e-commerce website that allowed good SEO, good customer experience according to their expectations, and quick development on the frontend and backend.</p>
+                <p className="m-2">I utilized Next.js strengths in SEO, and its server and client components, API routes, coupled with interactivity and reactivity using React. I also used Baymard Insititute's guides on E-commerce UX.</p>
+                <p className="m-2">I learnt the intricacies of e-commerce UX, Next.js API routes, payments processors and shopping cart state management.</p>
+            </div>,
+            image: '/images/projects/emergence.webp',
+            imageAlt: "A website for Psychotherapists offering modules",
+            stack: [
+                {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
+                {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
+                {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
+                {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                // {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
+            ],
+            status: 'In-development',
+            githubLink: '',
             hostLink: 'https://project-21-next-store.vercel.app/'
         },
-        // {
-        //     name: 'Emergence',
-        //     description: <div className='mx-2 mt-2 mb-4'> 
-        //         <p className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript and Node.js.</p>
-        //         <p className="m-2">A template for e-commerce websites to allow for quick development of other e-commerce websites.</p>  
-        //         <p className="m-2">The challenge was to build an e-commerce website that allowed good SEO, good customer experience according to their expectations, and quick development on the frontend and backend.</p>
-        //         <p className="m-2">I utilized Next.js strengths in SEO, and its server and client components, API routes, coupled with interactivity and reactivity using React. I also used Baymard Insititute's guides on E-commerce UX.</p>
-        //         <p className="m-2">I learnt the intricacies of e-commerce UX, Next.js API routes, payments processors and shopping cart state management.</p>
-        //     </div>,
-        //     image: '/images/projects/emergence.webp',
-        //     imageAlt: "A website for Psychotherapists offering modules",
-        //     stack: [
-        //         {name:'NextJS', image:'/images/tech-stack/nextjs-icon.svg'},
-        //         {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
-        //         {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
-        //         {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
-        //         {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
-        //     ],
-        //     status: 'In-development',
-        //     githubLink: '',
-        //     hostLink: 'https://project-21-next-store.vercel.app/'
-        // },
         // {
         //     name: 'Dropshipping Ecommerce website',
         //     description: <div className='mx-2 mt-2 mb-4'> 
