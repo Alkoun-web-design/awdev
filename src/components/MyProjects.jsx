@@ -609,7 +609,7 @@ const otherProjects = [
             ],
             status: 'In-development',
             githubLink: '',
-            hostLink: '/'
+            hostLink: 'https://project-21-next-store.vercel.app/'
         },
         {
             name: 'Emergence',
@@ -627,11 +627,12 @@ const otherProjects = [
                 {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
                 {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
                 {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
+                {name:'Motion', image:'/images/tech-stack/motion-icon.svg'},
                 // {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
             ],
             status: 'In-development',
             githubLink: '',
-            hostLink: 'https://project-21-next-store.vercel.app/'
+            hostLink: '/'
         },
         // {
         //     name: 'Dropshipping Ecommerce website',
