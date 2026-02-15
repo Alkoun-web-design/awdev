@@ -695,7 +695,7 @@ const otherProjects = [
                 {name:'React', image:'/images/tech-stack/reactjs-icon.svg'},
                 {name:'TypeScript', image:'/images/tech-stack/ts-icon.svg'},
                 {name:'Tailwind', image:'/images/tech-stack/tailwind-icon.svg'},
-                {name:'Motion', image:'/images/tech-stack/motion-icon.svg'},
+                {name:'Motion', image:'/images/tech-stack/motion-icon.png'},
                 // {name:'NodeJS', image:'/images/tech-stack/nodejs-icon.svg'},
             ],
             status: 'In-development',

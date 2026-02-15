@@ -8,8 +8,15 @@ export default function Hero() {
           exit={{ opacity:0 , translateY: 5 }}
           transition={{ duration: 0.5 }}
           className="col-start-2 col-end-12 md:col-span-7 lg:col-start-2 lg:col-end-8 row-start-2 row-span-2 md:row-span-3 backdrop-blur-2xl rounded-xl border border-gray-500 p-2 text-gray-100 overflow-auto">
-          <h1 className="text-xl md:text-4xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
-          <h2 className="text-lg md:text-xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
+          <div className="flex flex-row">  
+            <div className=''>
+              <img src="/images/me.webp" loading='lazy' className="h-20 w-20 rounded-full m-2"/>
+            </div>
+            <div className=''>
+              <h1 className="text-xl md:text-4xl m-2 tracking-tighter text-balance">HASSAM SAJID</h1>
+              <h2 className="text-lg md:text-xl m-2 font-[Roboto]">Frontend and Fullstack Web Developer</h2>
+            </div>
+          </div>
           <div className="flex flex-row ml-auto font-[Roboto] flex-wrap text-sm">
             <span className="hover:-translate-y-1 duration-300 ease-out transition-all">
               <img src="/images/tech-stack/js-icon.svg" className="inline w-4 h-4 ml-3 mr-1 my-1"/>
