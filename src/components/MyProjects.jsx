@@ -681,11 +681,8 @@ const otherProjects = [
             name: 'Emergence',
             description: <div className='mx-2 mt-2 mb-4'> 
             <ul>
-                <li className="m-2">An ecommerce store built using Next.js, React, Tailwind CSS, TypeScript and Node.js.</li>
-                <li className="m-2">A template for e-commerce websites to allow for quick development of other e-commerce websites.</li>  
-                <li className="m-2">The challenge was to build an e-commerce website that allowed good SEO, good customer experience according to their expectations, and quick development on the frontend and backend.</li>
-                <li className="m-2">I utilized Next.js strengths in SEO, and its server and client components, API routes, coupled with interactivity and reactivity using React. I also used Baymard Insititute's guides on E-commerce UX.</li>
-                <li className="m-2">I learnt the intricacies of e-commerce UX, Next.js API routes, payments processors and shopping cart state management.</li>
+                <li className="m-2">A website for allowing customers to enroll into courses, programs and other resources provided by psychologists.</li>
+                {/* <li className="m-2">.</li>   */}
             </ul>
             </div>,
             image: '/images/projects/emergence.webp',
