@@ -9,7 +9,7 @@ const MusicPlayer = lazy(() => import("./components/MusicPlayer"));
 // import { motion } from "motion/react"
 import { AnimatePresence } from "motion/react"
 // import MyProjects from "./components/MyProjects";
-const NyProjects = lazy(() => import("./components/MyProjects"))
+const MyProjects = lazy(() => import("./components/MyProjects"))
 // import GetInTouch from "./components/GetInTouch";
 const GetInTouch = lazy(() => import("./components/GetInTouch"))
 import AboutMe from "./components/AboutMe";
