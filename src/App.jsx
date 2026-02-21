@@ -8,11 +8,14 @@ const Canvas = lazy(() => import('./components/CanvasComponent'))
 const MusicPlayer = lazy(() => import("./components/MusicPlayer"));
 // import { motion } from "motion/react"
 import { AnimatePresence } from "motion/react"
-import MyProjects from "./components/MyProjects";
-import GetInTouch from "./components/GetInTouch";
+// import MyProjects from "./components/MyProjects";
+const NyProjects = lazy(() => import("./components/MyProjects"))
+// import GetInTouch from "./components/GetInTouch";
+const GetInTouch = lazy(() => import("./components/GetInTouch"))
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
-import Attributions from "./components/Attributions";
+// import Attributions from "./components/Attributions";
+const Attributions = lazy(() => import("./components/Attributions"))
 import { Earth } from "./components/Icons";
 import NewCell from "./components/NewCell";
 
